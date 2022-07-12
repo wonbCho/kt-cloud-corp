@@ -1,14 +1,16 @@
 import React from 'react';
-import classnames from 'classnames';
+import classNames from 'classnames/bind';
 import styles from './IntroduceLocation.scss';
 
 interface IOwnProps {
 };
 
+const cx = classNames.bind(styles);
+
 const IntroduceLocation: React.FC<IOwnProps> = ({ }) => {
   return (
     <>
-      <div className={classnames(styles.introducelocation)}>IntroduceLocation</div>
+      <div className={cx('introducelocation')}>IntroduceLocation</div>
     </>
   );
 };

@@ -1,14 +1,16 @@
 import React from 'react';
-import classnames from 'classnames';
+import classNames from 'classnames/bind';
 import styles from './ServiceGCloud.scss';
 
 interface IOwnProps {
 };
 
+const cx = classNames.bind(styles);
+
 const ServiceGCloud: React.FC<IOwnProps> = ({ }) => {
   return (
     <>
-      <div className={classnames(styles.servicegcloud)}>ServiceGCloud</div>
+      <div className={cx('servicegcloud')}>ServiceGCloud</div>
     </>
   );
 };

@@ -1,14 +1,16 @@
 import React from 'react';
-import classnames from 'classnames';
+import classNames from 'classnames/bind';
 import styles from './ServiceIndex.scss';
 
 interface IOwnProps {
 };
 
+const cx = classNames.bind(styles);
+
 const ServiceIndex: React.FC<IOwnProps> = ({ }) => {
   return (
     <>
-      <div className={classnames(styles.serviceindex)}>ServiceIndex</div>
+      <div className={cx('serviceindex')}>ServiceIndex</div>
     </>
   );
 };

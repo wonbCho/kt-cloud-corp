@@ -1,14 +1,16 @@
 import React from 'react';
-import classnames from 'classnames';
+import classNames from 'classnames/bind';
 import styles from './BoardNotice.scss';
 
 interface IOwnProps {
 };
 
+const cx = classNames.bind(styles);
+
 const BoardNotice: React.FC<IOwnProps> = ({ }) => {
   return (
     <>
-      <div className={classnames(styles.boardnotice)}>BoardNotice</div>
+      <div className={cx('boardnotice')}>BoardNotice</div>
     </>
   );
 };

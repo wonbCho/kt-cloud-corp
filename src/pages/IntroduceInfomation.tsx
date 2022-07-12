@@ -1,14 +1,16 @@
 import React from 'react';
-import classnames from 'classnames';
+import classNames from 'classnames/bind';
 import styles from './IntroduceInfomation.scss';
 
 interface IOwnProps {
 };
 
+const cx = classNames.bind(styles);
+
 const IntroduceInfomation: React.FC<IOwnProps> = ({ }) => {
   return (
     <>
-      <div className={classnames(styles.introduceinfomation)}>IntroduceInfomation</div>
+      <div className={cx('introduceinfomation')}>IntroduceInfomation</div>
     </>
   );
 };

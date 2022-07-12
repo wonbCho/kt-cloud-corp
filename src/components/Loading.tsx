@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Loading.scss';
-import classnames from 'classnames';
+import classNames from 'classnames/bind';
 
 const Loading: React.FC = () => {
   return (

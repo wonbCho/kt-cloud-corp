@@ -1,14 +1,16 @@
 import React from 'react';
-import classnames from 'classnames';
+import classNames from 'classnames/bind';
 import styles from './BoardPressDetail.scss';
 
 interface IOwnProps {
 };
 
+const cx = classNames.bind(styles);
+
 const BoardPressDetail: React.FC<IOwnProps> = ({ }) => {
   return (
     <>
-      <div className={classnames(styles.boardpressdetail)}>BoardPressDetail</div>
+      <div className={cx('boardpressdetail')}>BoardPressDetail</div>
     </>
   );
 };
