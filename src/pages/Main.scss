@@ -1,3 +1,55 @@
-.main {
-  background-color: green;
+.header {
+  position: relative;
+
+  .header_img_wrap {
+    background-color: #000;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  .header_title_wrap {
+    position: absolute;
+    top: 29px;
+    left: 24px;
+  }
+
+  .menu_wrap {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+
+  .header_text_wrap {
+    position: absolute;
+    bottom: 27px;
+    left: 24px;
+    right: 91px;
+    font-size: 24px;
+    color: #fff;
+    word-break: keep-all;
+  }
+
+  .background_Pagenation_wrap {
+    position: absolute;
+    bottom: 35px;
+    right: 24px;
+    display: flex;
+
+    .background_Pagenation {
+      width: 10px;
+      height: 10px;
+      opacity: 0.2;
+      border-radius: 2px;
+      border: solid 1px #fff;
+      margin-left: 5px;
+
+      &[aria-selected=true] {
+        background-color: #fff;
+      }
+    }
+  }
 }
