@@ -4,7 +4,9 @@ import { Switch, BrowserRouter, Route } from 'react-router-dom';
 import { routes } from './routes';
 import { Provider } from 'react-redux';
 import store from './config/store';
-import Loading from '@src/components/Loading';
+import Loading from '@src/components/common/Loading';
+
+import './index.scss';
 
 const App = () => {
   return (

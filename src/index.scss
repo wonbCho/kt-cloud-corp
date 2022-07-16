@@ -1,0 +1,13 @@
+:global(.mobile_wrapper) {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    :global(.pc_wrapper) {
+        display: none;
+    }
+
+    :global(.mobile_wrapper) {
+        display: block;
+    }
+}
