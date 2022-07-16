@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './IntroduceAbout.scss';
 import Header from '@src/components/common/Header';
 import Footer from '@src/components/common/Footer';
+import CardItem from '@src/components/common/CardItem';
 
 interface IOwnProps {
 };
@@ -231,6 +232,9 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
       <div className={cx('text_info')}>
         <strong className={cx('title')}>디지털 일상을 만드는 여정</strong>
         <p className={cx('text')}>우리는 세상을 이롭게 하기 위해 여러분을 중심으로 방향성을 짚고 그 안에서 성장과 상생을 함께 실현하여 사회적인 윤리와 책임까지 실천 합니다.</p>
+      </div>
+      <div className={cx('card_item_wrap')}>
+        <CardItem />
       </div>
       <Footer />
     </div>

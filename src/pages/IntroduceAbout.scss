@@ -179,6 +179,10 @@
       }
     }
   }
+
+  .card_item_wrap {
+    padding-bottom: 85px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -414,6 +418,10 @@
           }
         }
       }
+    }
+
+    .card_item_wrap {
+      padding-bottom: 140px;
     }
   }
 }

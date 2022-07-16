@@ -39,6 +39,11 @@
 }
 
 @media (min-width: 1300px) {
+  .card_item {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
   .career_esg_wrap {
     margin: 49px -32px 0;
     display: flex;
