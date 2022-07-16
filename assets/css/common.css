@@ -2,6 +2,8 @@
 
 html {
   height: 100%;
+  background-color: #00080f;
+  color: #fff;
 }
 
 body {
@@ -43,7 +45,7 @@ body,
 #app {
   height: 100%;
   -webkit-text-size-adjust: none;
-  font-family: '-apple-system', 'AppleSDGothicNeo', 'SFProDisplay', 'BlinkMacSystemFont', 'HelveticaNeue', 'Helvetica', arial, 'sans-serif';
+  font-family: 'Pretendard', '-apple-system', 'AppleSDGothicNeo', 'SFProDisplay', 'BlinkMacSystemFont', 'HelveticaNeue', 'Helvetica', arial, 'sans-serif';
 }
 
 address,
@@ -104,3 +106,5 @@ button {
   height: 1px !important;
   margin: -1px !important;
 }
+
+@import url('./font.css');

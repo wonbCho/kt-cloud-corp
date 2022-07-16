@@ -13,7 +13,7 @@ const Main: React.FC<IOwnProps> = ({ }) => {
   return (
     <div className={cx('main')}>
       <div className={cx('banner')}>
-        <Header />
+        <Header isMain={true} />
         <div className={cx('pc_wrapper')}>
           <img src='/assets/img/pc/png/main.png' className={cx('banner_img')}></img>
         </div>
