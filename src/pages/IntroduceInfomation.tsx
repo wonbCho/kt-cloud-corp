@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './IntroduceInfomation.scss';
 import Header from '@src/components/common/Header';
 import Footer from '@src/components/common/Footer';
+import IntroduceBanner from '@src/components/common/IntroduceBanner';
 
 
 interface IOwnProps {
@@ -13,9 +14,7 @@ const cx = classNames.bind(styles);
 const IntroduceInfomation: React.FC<IOwnProps> = ({ }) => {
   return (
     <div className={cx('introduceinfomation')}>
-      <div className={cx('banner')}>
-        <Header />
-      </div>
+      <IntroduceBanner title='회사 정보' />
       <div className={cx('contents_wrap')}>
         <div className={cx('info_wrap')}>
           <strong className={cx('info_list_title')}>회사 일반 사항</strong>
