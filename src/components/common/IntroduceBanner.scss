@@ -1,0 +1,34 @@
+.introduce_banner {
+  position: relative;
+  height: 120px;
+  background-image: url('/assets/img/common/png/introduce_banner.png');
+  background-position: center;
+  background-size: cover;
+
+  .text {
+    position: absolute;
+    left: 24px;
+    bottom: 11px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .introduce_banner {
+    height: 320px;
+  }
+
+  .text_wrap {
+    position: relative;
+    max-width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+
+    .text {
+      left: 0;
+      bottom: 40px;
+      font-size: 40px;
+      line-height: 52px;
+    }
+  }
+}
