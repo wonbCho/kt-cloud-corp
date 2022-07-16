@@ -70,6 +70,11 @@
 
 @media (min-width: 1300px) {
   .introducepartners {
+    .content_area {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
     .tab_list {
       margin-top: 38px;
 

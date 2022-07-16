@@ -14,10 +14,12 @@ const Header: React.FC<IOwnProps> = ({ }) => {
           <img src="/assets/img/common/png/logo.png"></img>
         </div>
         <div className={cx('menu_list')}>
-          <a href='#'>소개</a>
-          <a href='#'>서비스</a>
-          <a href='#'>홍보</a>
-          <a href='#'>채용</a>
+          <a href='#' className={cx('link')}>기업</a>
+          <a href='#' className={cx('link')}>연혁</a>
+          <a href='#' className={cx('link')}>회사정보</a>
+          <a href='#' className={cx('link')}>ESG 경영</a>
+          <a href='#' className={cx('link')}>주요 관계사</a>
+          <a href='#' className={cx('link')}>인재채용</a>
         </div>
         <div className={cx('menu_bar_wrap')}>
           <button className={cx('console_wrap')}>
@@ -31,9 +33,10 @@ const Header: React.FC<IOwnProps> = ({ }) => {
         <img src="/assets/img/common/svg/arrow-dropdown.svg"></img>
         <img src="/assets/img/common/svg/arrow-dropdown.svg"></img>
       </button> */}
-          <button className={cx('menu_wrap')}>
+          {/* [TODO]: 2차 스펙 */}
+          {/* <button className={cx('menu_wrap')}>
             <img src="/assets/img/common/svg/menu-bar.svg"></img>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
