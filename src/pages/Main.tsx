@@ -1,9 +1,8 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Main.scss';
-import MobileHeader from '@src/components/mobile/Header';
-import PCHeader from '@src/components/pc/Header';
 import Foorter from '@src/components/common/Footer';
+import Header from '@src/components/common/Header';
 
 interface IOwnProps {
 };
@@ -13,19 +12,16 @@ const cx = classNames.bind(styles);
 const Main: React.FC<IOwnProps> = ({ }) => {
   return (
     <div className={cx('main')}>
-      <div className={cx('header')}>
+      <div className={cx('banner')}>
+        <Header />
         <div className={cx('pc_wrapper')}>
-          <img src='/assets/img/pc/png/main.png' className={cx('header_img')}></img>
-          <div className={cx('pc_header')}>
-
-          </div>
-          <PCHeader />
+          <img src='/assets/img/pc/png/main.png' className={cx('banner_img')}></img>
         </div>
         <div className={cx('mobile_wrapper')}>
-          <img src='/assets/img/mobile/png/main.png' className={cx('header_img')}></img>
-          <MobileHeader />
+          <img src='/assets/img/mobile/png/main.png' className={cx('banner_img')}></img>
         </div>
-        <strong className={cx('header_text_wrap')}>당신의 새로운 일상을 이어갑니다.</strong>
+
+        <strong className={cx('banner_text_wrap')}>당신의 새로운 일상을 이어갑니다.</strong>
         <div className={cx('background_pagenation_wrap')}>
           <div className={cx('background_pagenation')} aria-selected="true"></div>
           <div className={cx('background_pagenation')} aria-selected="false"></div>
@@ -155,9 +151,7 @@ const Main: React.FC<IOwnProps> = ({ }) => {
           </div>
         </div>
       </div>
-      <div className={cx('footer')}>
-        <Foorter />
-      </div>
+      <Foorter />
     </div >
   );
 };

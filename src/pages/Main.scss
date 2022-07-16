@@ -1,11 +1,11 @@
-.header {
+.banner {
   position: relative;
 
-  .header_img {
+  .banner_img {
     width: 100%;
   }
 
-  .header_text_wrap {
+  .banner_text_wrap {
     position: absolute;
     bottom: 59px;
     left: 24px;
@@ -36,8 +36,6 @@
     }
   }
 }
-
-
 
 .connect_wrap {
   position: relative;
