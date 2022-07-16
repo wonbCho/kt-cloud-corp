@@ -26,7 +26,7 @@ const Header: React.FC<IOwnProps> = ({ }) => {
               <img className={cx('console_img')} src="/assets/img/common/svg/arrow-external.svg"></img>
             </span>
           </button>
-
+          {/* [TODO]: 2차 스펙 */}
           {/* <button className={cx('language_wrap')}>
         <img src="/assets/img/common/svg/arrow-dropdown.svg"></img>
         <img src="/assets/img/common/svg/arrow-dropdown.svg"></img>
