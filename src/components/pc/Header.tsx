@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Header.scss';
+import { Link, useLocation } from 'react-router-dom';
+import URLInfo from '@src/constants/URLInfo';
 
 const cx = classNames.bind(styles);
 
 interface IOwnProps { };
 
 const Header: React.FC<IOwnProps> = ({ }) => {
+  const location = useLocation();
+  const [menu, setMenu] = useState<string>('');
+
+  useEffect(() => {
+    setMenu(location.pathname);
+  }, [location.pathname]);
+
+
   return (
     <div className={cx('header')}>
       <div className={cx('header_wrap')}>
@@ -14,10 +24,11 @@ const Header: React.FC<IOwnProps> = ({ }) => {
           <img src="/assets/img/common/png/logo.png"></img>
         </div>
         <div className={cx('menu_list')}>
-          <a href='#'>소개</a>
-          <a href='#'>서비스</a>
-          <a href='#'>홍보</a>
-          <a href='#'>채용</a>
+          <Link to={URLInfo.INTRODUCE_ABOUT} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_ABOUT}>기업소개</Link>
+          <Link to={URLInfo.INTRODUCE_HISTORY} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_HISTORY}>연혁</Link>
+          <Link to={URLInfo.INTRODUCE_INFOMATION} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_INFOMATION}>회사정보</Link>
+          <Link to='#' className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_INFOMATION}>ESG 경영</Link>
+          <Link to={URLInfo.INTRODUCE_PARTNERS} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_PARTNERS}>주요 관계사</Link>
         </div>
         <div className={cx('menu_bar_wrap')}>
           <button className={cx('console_wrap')}>
@@ -31,9 +42,10 @@ const Header: React.FC<IOwnProps> = ({ }) => {
         <img src="/assets/img/common/svg/arrow-dropdown.svg"></img>
         <img src="/assets/img/common/svg/arrow-dropdown.svg"></img>
       </button> */}
-          <button className={cx('menu_wrap')}>
+          {/* [TODO]: 2차 스펙 */}
+          {/* <button className={cx('menu_wrap')}>
             <img src="/assets/img/common/svg/menu-bar.svg"></img>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
