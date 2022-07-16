@@ -1,58 +1,62 @@
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 
-    .header_wrap {
-        position: relative;
-        max-width: 1300px;
-        margin: 26px auto 0;
-        height: 32px;
-    }
+  .header_wrap {
+    position: relative;
+    max-width: 1300px;
+    margin: 26px auto 0;
+    height: 32px;
+  }
 }
 
 .header_title_wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header_img {
-    width: 100%;
+  width: 100%;
 }
 
 .menu_list {
-    position: absolute;
-    top: 0;
-    left: 489px;
-    display: flex;
-    width: 323px;
-    justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+
+  .link {
+    margin: 0 35px;
+    white-space: nowrap;
+  }
 }
 
 .menu_bar_wrap {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
 
 }
 
 .console_wrap {
-    font-size: 14px;
-    line-height: 22px;
-    background-color: #00b2ff;
-    width: 100px;
-    height: 32px;
-    border-radius: 6px;
-    margin-left: 10px;
-    color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #00b2ff;
+  width: 100px;
+  height: 32px;
+  border-radius: 6px;
+  margin-left: 10px;
+  color: #fff;
 
-    .console_img {
+  .console_img {
 
-        margin-top: 4px;
-    }
+    margin-top: 4px;
+  }
 }
 
 //[TODO]: 2차 스펙
@@ -68,5 +72,5 @@
 }
 */
 .menu_wrap {
-    margin-left: 10px;
+  margin-left: 10px;
 }
