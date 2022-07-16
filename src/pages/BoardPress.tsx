@@ -9,9 +9,7 @@ const cx = classNames.bind(styles);
 
 const BoardPress: React.FC<IOwnProps> = ({ }) => {
   return (
-    <>
-      <div className={cx('boardpress')}>BoardPress</div>
-    </>
+    <div className={cx('boardpress')}>BoardPress</div>
   );
 };
 
