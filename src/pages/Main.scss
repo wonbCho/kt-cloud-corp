@@ -1,11 +1,43 @@
-.main {
-  background-color: #00080f;
-  color: #fff;
-}
-
 .header {
   position: relative;
+
+  .header_img {
+    width: 100%;
+  }
+
+  .header_text_wrap {
+    position: absolute;
+    bottom: 59px;
+    left: 24px;
+    right: 91px;
+    font-size: 24px;
+    font-weight: 500;
+    word-break: keep-all;
+  }
+
+  .background_pagenation_wrap {
+    position: absolute;
+    bottom: 35px;
+    left: 24px;
+    display: flex;
+
+    .background_pagenation {
+      width: 10px;
+      height: 10px;
+      opacity: 0.2;
+      border-radius: 2px;
+      border: solid 1px #fff;
+      margin-left: 5px;
+
+      &[aria-selected=true] {
+        opacity: 1;
+        background-color: #fff;
+      }
+    }
+  }
 }
+
+
 
 .connect_wrap {
   position: relative;
@@ -229,13 +261,23 @@
         font-weight: 500;
       }
 
-      .career_esg_link {
+      .career_link {
         position: absolute;
         top: 0;
         right: 0;
         width: 24px;
         height: 24px;
         background-image: url('./assets/img/common/svg/btn-external-link.svg');
+        background-size: contain;
+      }
+
+      .esg_link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        background-image: url('./assets/img/common/svg/ico-link.svg');
         background-size: contain;
       }
 
@@ -248,70 +290,6 @@
   }
 }
 
-.footer {
-  margin: 0 24px;
-
-  .service_policy_wrap {
-    .service_policy {
-      display: block;
-      margin-top: 14px;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 22px;
-    }
-
-    :nth-child(1) {
-      color: #9e9e9e;
-    }
-  }
-}
-
-.company_wrap {
-  margin-top: 29px;
-
-  .company {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 22px;
-  }
-
-  .company_info_wrap {
-    margin-top: 8px;
-    font-size: 14px;
-    line-height: 22px;
-    color: #5a5a5a;
-
-    .company_info {
-      display: block;
-    }
-  }
-}
-
-.company_name {
-  margin-top: 22px;
-}
-
-.cooperation_company {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 24px;
-  width: 100%;
-  position: relative;
-  margin-top: 41.2px;
-  padding-bottom: 6px;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url('./assets/img/common/svg/common/svg/allow.svg');
-    background-size: contain;
-  }
-}
 
 @media (min-width: 1400px) {
   .connect_wrap {
@@ -472,78 +450,6 @@
           margin-top: 94px;
         }
       }
-    }
-  }
-
-
-  .footer {
-    width: 1300px;
-    margin: 0 auto;
-
-    .service_policy_wrap {
-      display: flex;
-
-      .service_policy {
-        display: block;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 22px;
-        margin: 0;
-      }
-
-      :nth-child(1) {
-        color: #fff;
-      }
-
-      :nth-child(2) {
-        height: 16px;
-        margin: 0 15px;
-        padding: 0 15px;
-        border-left: 1px solid #2c2c2c;
-        border-right: 1px solid #2c2c2c;
-      }
-    }
-  }
-
-  .company_wrap {
-    margin-top: 24px;
-
-    .company_info_wrap {
-      margin-top: 1px;
-      display: flex;
-
-      :nth-child(2) {
-        height: 16px;
-        margin: 0 8px;
-        padding: 0 8px;
-        border-left: 1px solid #2c2c2c;
-        border-right: 1px solid #2c2c2c;
-      }
-    }
-  }
-
-  .company_name {
-    margin-top: 22px;
-  }
-
-  .cooperation_company {
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 24px;
-    width: 100%;
-    position: relative;
-    margin-top: 41.2px;
-    padding-bottom: 6px;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 500;
-
-    &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      content: '1';
     }
   }
 

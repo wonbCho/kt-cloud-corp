@@ -1,57 +1,69 @@
 .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .header_wrap {
+        position: relative;
+        max-width: 1300px;
+        margin: 26px auto 0;
+    }
+}
+
+.header_title_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .header_img {
     width: 100%;
 }
 
-.header_contents_wrap {
-    max-width: 1300px;
-    margin: 0 auto;
+.menu_list {
+    position: absolute;
+    top: 0;
+    left: 489px;
+    display: flex;
+    width: 323px;
+    justify-content: space-around;
+}
 
-    .header_title_wrap {
-        position: absolute;
-        top: 29px;
-        left: 24px;
+.menu_bar_wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+
+}
+
+.console_wrap {
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #00b2ff;
+    width: 100px;
+    height: 32px;
+    border-radius: 6px;
+    margin-left: 10px;
+    color: #fff;
+
+    .console_img {
+
+        margin-top: 4px;
     }
+}
 
-    .menu_wrap {
-        position: absolute;
-        top: 24px;
-        right: 24px;
-        width: 32px;
-        height: 32px;
-        background-color: #fff;
-        border-radius: 6px;
-    }
-
-    .header_text_wrap {
-        position: absolute;
-        bottom: 37px;
-        left: 0;
-        right: 91px;
-        font-size: 80px;
-    }
-
-    .background_pagenation_wrap {
-        position: absolute;
-        bottom: 35px;
-        left: 24px;
-        display: flex;
-
-        .background_pagenation {
-            width: 10px;
-            height: 10px;
-            opacity: 0.2;
-            border-radius: 2px;
-            border: solid 1px #fff;
-            margin-left: 5px;
-
-            &[aria-selected=true] {
-                opacity: 1;
-                background-color: #fff;
-            }
-        }
-    }
+/*
+.language_wrap {
+    position: absolute;
+    top: 0;
+    right: 42px;
+    background-color: #fff;
+    width: 54px;
+    height: 32px;
+    border-radius: 6px;
+}
+*/
+.menu_wrap {
+    margin-left: 10px;
 }

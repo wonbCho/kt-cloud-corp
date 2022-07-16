@@ -6,6 +6,8 @@ html {
 
 body {
   -webkit-text-size-adjust: none;
+  background-color: #00080f;
+  color: #fff;
 }
 
 body,
