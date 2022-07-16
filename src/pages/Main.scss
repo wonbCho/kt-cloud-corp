@@ -91,14 +91,14 @@
     margin-top: 24px;
     line-height: 24px;
 
-    &::before {
+    &:before {
       position: absolute;
       top: 0;
       right: -36px;
       width: 24px;
       height: 24px;
       content: '';
-      background-image: url('./assets/img/common/svg/common/svg/btn-link.svg');
+      background-image: url('./assets/img/common/svg/btn-link.svg');
       background-size: contain;
     }
   }
@@ -237,62 +237,47 @@
       background-size: contain;
     }
   }
-
-  .career_esg_wrap {
-    margin: 49px 0 85px;
-  }
-
-  .career_esg {
-    margin-top: 24px;
-
-    .career_esg_img {
-      width: 100%;
-    }
-
-    .text_wrap {
-      position: relative;
-      margin: 24px 24px 0;
-
-      .career_esg_title {
-        font-size: 16px;
-        line-height: 22px;
-        font-weight: 500;
-      }
-
-      .career_link {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 24px;
-        height: 24px;
-        background-image: url('./assets/img/common/svg/btn-external-link.svg');
-        background-size: contain;
-      }
-
-      .esg_link {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 24px;
-        height: 24px;
-        background-image: url('./assets/img/common/svg/ico-link.svg');
-        background-size: contain;
-      }
-
-      .career_esg_text {
-        margin-top: 24px;
-        font-size: 24px;
-        line-height: 34px;
-      }
-    }
-  }
 }
 
+@media (min-width: 1300px) {
+  .banner {
+    .banner_wrap {
+      position: relative;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
 
-@media (min-width: 1400px) {
+    .event_link {
+      position: absolute;
+      bottom: 253px;
+      left: 0px;
+      font-size: 24px;
+
+      .event_lmg {
+        margin: 2px 0 0 10px;
+
+      }
+    }
+
+    .banner_text_wrap {
+      bottom: 37px;
+      left: 0px;
+      right: 500px;
+      font-size: 80px;
+      line-height: 98px;
+    }
+
+    .background_pagenation_wrap {
+      bottom: 50px;
+      left: auto;
+      right: 0;
+    }
+  }
+
   .connect_wrap {
+    position: relative;
     width: 1300px;
-    margin: 135px auto 0;
+    margin: 135px auto;
 
     .connect_text {
       display: block;
@@ -304,16 +289,8 @@
       left: auto;
     }
 
-    .connect_title {
-      position: absolute;
-      bottom: 24px;
-      left: 24px;
-      font-size: 24px;
-      font-weight: 500;
-    }
-
     .connect_area {
-      margin: 60px -25px 0;
+      margin: 168px -25px 0;
       display: flex;
 
       .connect_img_wrap {
@@ -334,14 +311,25 @@
     }
   }
 
+  .kt_cloud_learn_wrap {
+    position: absolute;
+    top: 240px;
+    left: 0;
+
+    .learn_text {
+      font-size: 24px;
+      line-height: 34px;
+
+    }
+  }
+
+
+
   .idc_service_wrap {
     width: 1300px;
     height: 650px;
     margin: 0 auto;
 
-    .idc_service_img {
-      height: 100%;
-    }
 
     .idc_service_title {
       top: 100px;
@@ -351,20 +339,23 @@
     }
 
     .idc_service_sub_title {
-      position: absolute;
       width: 300px;
       top: 152px;
       left: 100px;
       right: auto;
       font-size: 40px;
       line-height: 50px;
-      font-weight: 500;
     }
 
     .idc_service_link {
-      position: absolute;
-      top: 148px;
-      left: 24px;
+      top: 527px;
+      left: 100px;
+      font-size: 16px;
+      line-height: 22px;
+
+      .idc_service_link_img {
+        margin-left: 12px;
+      }
     }
 
     .idc_service_text {
@@ -392,16 +383,18 @@
     .news_wrap {
       margin: 15px -25px 0;
       flex-wrap: wrap;
-      width: 100%;
     }
 
     .news_contents_wrap {
-      margin: 0 25px;
       width: 33.3%;
+      margin: 0;
+
+      .contents_wrap {
+        margin: 36px 25px 0;
+      }
 
       .news_img_wrap {
         display: block;
-        margin-top: 36px;
 
         .news_img {
           width: 100%;
@@ -416,40 +409,5 @@
         margin-top: 2px;
       }
     }
-
-    .career_esg_wrap {
-      margin: 49px -32px 0;
-      display: flex;
-    }
-
-    .career_esg {
-      margin: 24px 32px 0;
-      width: 50%;
-      position: relative;
-
-
-      .text_wrap {
-        position: absolute;
-        margin: 40px 0 0 40px;
-        top: 0;
-        left: 0;
-
-        .career_esg_title {
-          font-size: 24px;
-          line-height: 34px;
-        }
-
-        .career_esg_link {
-          position: relative;
-          margin-top: 107px;
-        }
-
-        .career_esg_text {
-          margin-top: 94px;
-        }
-      }
-    }
   }
-
-
 }
