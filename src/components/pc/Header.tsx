@@ -9,31 +9,31 @@ interface IOwnProps { };
 const Header: React.FC<IOwnProps> = ({ }) => {
   return (
     <div className={cx('header')}>
-      <img src='/assets/img/pc/png/main.png' className={cx('header_img')}></img>
-      <div className={cx('header_contents_wrap')}>
+      <div className={cx('header_wrap')}>
         <div className={cx('header_title_wrap')}>
           <img src="/assets/img/common/png/logo.png"></img>
         </div>
         <div className={cx('menu_list')}>
-          <span>소개</span>
-          <span>서비스</span>
-          <span>홍보</span>
-          <span>채용</span>
+          <a href='#'>소개</a>
+          <a href='#'>서비스</a>
+          <a href='#'>홍보</a>
+          <a href='#'>채용</a>
         </div>
-        <button className={cx('console')}>
-          <img src="/assets/img/common/svg/group-44.svg"></img>
-        </button>
-        <button className={cx('language')}>
-          <img src="/assets/img/common/svg/group-44.svg"></img>
-        </button>
-        <button className={cx('menu_wrap')}>
-          <img src="/assets/img/common/svg/group-44.svg"></img>
-        </button>
-        <strong className={cx('header_text_wrap')}>당신의 새로운 일상을 이어갑니다.</strong>
-        <div className={cx('background_pagenation_wrap')}>
-          <div className={cx('background_pagenation')} aria-selected="true"></div>
-          <div className={cx('background_pagenation')} aria-selected="false"></div>
-          <div className={cx('background_pagenation')} aria-selected="false"></div>
+        <div className={cx('menu_bar_wrap')}>
+          <button className={cx('console_wrap')}>
+            <span>
+              CONSOLE
+              <img className={cx('console_img')} src="/assets/img/common/svg/arrow-external.svg"></img>
+            </span>
+          </button>
+
+          {/* <button className={cx('language_wrap')}>
+        <img src="/assets/img/common/svg/arrow-dropdown.svg"></img>
+        <img src="/assets/img/common/svg/arrow-dropdown.svg"></img>
+      </button> */}
+          <button className={cx('menu_wrap')}>
+            <img src="/assets/img/common/svg/menu-bar.svg"></img>
+          </button>
         </div>
       </div>
     </div>

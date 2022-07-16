@@ -15,10 +15,21 @@ const Main: React.FC<IOwnProps> = ({ }) => {
     <div className={cx('main')}>
       <div className={cx('header')}>
         <div className={cx('pc_wrapper')}>
+          <img src='/assets/img/pc/png/main.png' className={cx('header_img')}></img>
+          <div className={cx('pc_header')}>
+
+          </div>
           <PCHeader />
         </div>
         <div className={cx('mobile_wrapper')}>
+          <img src='/assets/img/mobile/png/main.png' className={cx('header_img')}></img>
           <MobileHeader />
+        </div>
+        <strong className={cx('header_text_wrap')}>당신의 새로운 일상을 이어갑니다.</strong>
+        <div className={cx('background_pagenation_wrap')}>
+          <div className={cx('background_pagenation')} aria-selected="true"></div>
+          <div className={cx('background_pagenation')} aria-selected="false"></div>
+          <div className={cx('background_pagenation')} aria-selected="false"></div>
         </div>
       </div>
       <div className={cx('connect_wrap')}>
