@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './Main.scss';
 import MobileHeader from '@src/components/mobile/Header';
 import PCHeader from '@src/components/pc/Header';
+import Foorter from '@src/components/common/Footer';
 
 interface IOwnProps {
 };
@@ -16,10 +17,9 @@ const Main: React.FC<IOwnProps> = ({ }) => {
         <div className={cx('pc_wrapper')}>
           <PCHeader />
         </div>
-        <div className={cx('`mobile_wrapper`')}>
+        <div className={cx('mobile_wrapper')}>
           <MobileHeader />
         </div>
-
       </div>
       <div className={cx('connect_wrap')}>
         <strong className={cx('connect_text')}>Connect New Life</strong>
@@ -126,7 +126,7 @@ const Main: React.FC<IOwnProps> = ({ }) => {
                 <br />
                 세상이 성장하고 있습니다
               </p>
-              <a className={cx('mobile_wrapper', 'career_esg_link')} />
+              <a className={cx('mobile_wrapper', 'career_link')} />
 
             </div>
           </div>
@@ -139,33 +139,13 @@ const Main: React.FC<IOwnProps> = ({ }) => {
                 <br />
                 지속가능한 미래
               </p>
-              <a className={cx('mobile_wrapper', 'career_esg_link')} />
+              <a className={cx('mobile_wrapper', 'esg_link')} />
             </div>
           </div>
         </div>
       </div>
       <div className={cx('footer')}>
-        <div className={cx('service_policy_wrap')}>
-          <a className={cx('service_policy')}>개인정보 처리방침</a>
-          <a className={cx('service_policy')}>서비스 이용약관</a>
-          <a className={cx('service_policy')}>윤리위반 신고</a>
-        </div>
-        <div className={cx('company_wrap')}>
-          <strong className={cx('company')}>주식회사 케이티클라우드</strong>
-          <div className={cx('company_info_wrap')}>
-            <span className={cx('company_info')}>대표이사 윤동식</span>
-            <span className={cx('company_info')}>서울특별시 강남구 학동로 343 더피나클타워</span>
-            <span className={cx('company_info')}>사업자등록번호 : 696-87-02611 </span>
-            <span className={cx('company_info')}>고객센터 : 080-2580-005</span>
-            <span className={cx('company_info')}>이메일 : ktcloud-voc@kt.com</span>
-          </div>
-        </div>
-        <div className={cx('company_name')}>
-          <img src='/assets/img/common/svg/logo-black.svg' />
-        </div>
-        <a href='#' className={cx('cooperation_company')}>
-          <span>관계사 링크</span>
-        </a>
+        <Foorter />
       </div>
     </div >
   );

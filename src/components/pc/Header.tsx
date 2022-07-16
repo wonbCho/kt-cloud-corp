@@ -9,10 +9,10 @@ interface IOwnProps { };
 const Header: React.FC<IOwnProps> = ({ }) => {
   return (
     <div className={cx('header')}>
-      <img src='/assets/img/pc-main.png' className={cx('header_img')}></img>
+      <img src='/assets/img/pc/png/main.png' className={cx('header_img')}></img>
       <div className={cx('header_contents_wrap')}>
         <div className={cx('header_title_wrap')}>
-          <img src="/assets/img/logo-negative.png"></img>
+          <img src="/assets/img/common/png/logo.png"></img>
         </div>
         <div className={cx('menu_list')}>
           <span>소개</span>
@@ -21,13 +21,13 @@ const Header: React.FC<IOwnProps> = ({ }) => {
           <span>채용</span>
         </div>
         <button className={cx('console')}>
-          <img src="/assets/img/group-44.svg"></img>
+          <img src="/assets/img/common/svg/group-44.svg"></img>
         </button>
         <button className={cx('language')}>
-          <img src="/assets/img/group-44.svg"></img>
+          <img src="/assets/img/common/svg/group-44.svg"></img>
         </button>
         <button className={cx('menu_wrap')}>
-          <img src="/assets/img/group-44.svg"></img>
+          <img src="/assets/img/common/svg/group-44.svg"></img>
         </button>
         <strong className={cx('header_text_wrap')}>당신의 새로운 일상을 이어갑니다.</strong>
         <div className={cx('background_pagenation_wrap')}>
