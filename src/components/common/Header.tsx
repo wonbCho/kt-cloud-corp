@@ -6,16 +6,18 @@ import PCHeader from '@src/components/pc/Header';
 
 const cx = classNames.bind(styles);
 
-interface IOwnProps { };
+interface IOwnProps {
+  isMain?: boolean;
+};
 
-const Header: React.FC<IOwnProps> = ({ }) => {
+const Header: React.FC<IOwnProps> = ({ isMain }) => {
   return (
     <div className={cx('header')}>
       <div className={cx('pc_wrapper')}>
         <PCHeader />
       </div>
       <div className={cx('mobile_wrapper')}>
-        <MobileHeader />
+        <MobileHeader isMain={isMain} />
       </div>
     </div>
   );

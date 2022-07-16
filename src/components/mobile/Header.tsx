@@ -4,13 +4,19 @@ import styles from './Header.scss';
 
 const cx = classNames.bind(styles);
 
-interface IOwnProps { };
+interface IOwnProps {
+  isMain?: boolean;
+};
 
-const Header: React.FC<IOwnProps> = ({ }) => {
+const Header: React.FC<IOwnProps> = ({ isMain }) => {
   return (
     <div className={cx('header')}>
       <div className={cx('header_title_wrap')}>
-        <img src="/assets/img/common/png/logo.png"></img>
+        {isMain ? (
+          <img src="/assets/img/common/png/logo_color.png"></img>
+        ) : (
+          <img src="/assets/img/common/png/logo.png"></img>
+        )}
       </div>
       <button className={cx('menu_wrap')}>
         <img src="/assets/img/common/svg/menu-bar.svg"></img>
