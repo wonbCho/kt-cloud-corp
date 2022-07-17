@@ -16,7 +16,7 @@ const Main: React.FC<IOwnProps> = ({ }) => {
     <div className={cx('main')}>
       <Popup />
       <div className={cx('banner')}>
-        <Header isMain={true} />
+        <Header  />
         <div className={cx('pc_wrapper')}>
           <img src='/assets/img/pc/png/main.png' className={cx('banner_img')}></img>
         </div>

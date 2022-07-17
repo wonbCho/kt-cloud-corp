@@ -7,17 +7,17 @@ import PCHeader from '@src/components/pc/Header';
 const cx = classNames.bind(styles);
 
 interface IOwnProps {
-  isMain?: boolean;
+  isLight?: boolean;
 };
 
-const Header: React.FC<IOwnProps> = ({ isMain }) => {
+const Header: React.FC<IOwnProps> = ({ isLight }) => {
   return (
     <div className={cx('header')}>
       <div className={cx('pc_wrapper')}>
-        <PCHeader />
+        <PCHeader isLight={isLight} />
       </div>
       <div className={cx('mobile_wrapper')}>
-        <MobileHeader isMain={isMain} />
+        <MobileHeader isLight={isLight} />
       </div>
     </div>
   );

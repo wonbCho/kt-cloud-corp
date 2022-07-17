@@ -13,7 +13,7 @@ const cx = classNames.bind(styles);
 const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
   return (
     <div className={cx('introduce_about')}>
-      <Header />
+      <Header isLight={true} />
       <div className={cx('content_1')}>
         <div className={cx('content_wrap')}>
           <span className={cx('intro_title')}>기업소개</span>

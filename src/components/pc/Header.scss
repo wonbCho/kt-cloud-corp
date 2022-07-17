@@ -1,8 +1,13 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 1;
+
+  &.fixed {
+    position: fixed;
+    background-color: #000;
+  }
 
   .header_wrap {
     position: relative;
