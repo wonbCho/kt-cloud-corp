@@ -11,13 +11,13 @@
     .header_img {
         width: 90px;
         height: 22px;
-        background-image: url("/assets/img/common/png/logo-positive.png");
+        background-image: url("/static/img/common/png/logo-positive.png");
     }
 
     .close_img {
         width: 32px;
         height: 32px;
-        background-image: url("/assets/img/common/svg/black_close.svg");
+        background-image: url("/static/img/common/svg/black_close.svg");
     }
 }
 
@@ -43,7 +43,7 @@
         right: 0;
         width: 32px;
         height: 32px;
-        background-image: url("/assets/img/common/svg/black_up_right_arrow.svg");
+        background-image: url("/static/img/common/svg/black_up_right_arrow.svg");
     }
 
     .menu_link_wrap {

@@ -38,17 +38,17 @@ const Header: React.FC<IOwnProps> = ({ isLight }) => {
           <button className={cx('console_wrap')}>
             <span>
               CONSOLE
-              <img className={cx('console_img')} src="/assets/img/common/svg/white_up_right_allow.svg"></img>
+              <img className={cx('console_img')} src="/static/img/common/svg/white_up_right_allow.svg"></img>
             </span>
           </button>
           {/* [TODO]: 2차 스펙 */}
           {/* <button className={cx('language_wrap')}>
-        <img src="/assets/img/common/svg/arrow-dropdown.svg"></img>
-        <img src="/assets/img/common/svg/arrow-dropdown.svg"></img>
+        <img src="/static/img/common/svg/arrow-dropdown.svg"></img>
+        <img src="/static/img/common/svg/arrow-dropdown.svg"></img>
       </button> */}
           {/* [TODO]: 2차 스펙 */}
           {/* <button className={cx('menu_wrap')}>
-            <img src="/assets/img/common/svg/menu-bar.svg"></img>
+            <img src="/static/img/common/svg/menu-bar.svg"></img>
           </button> */}
         </div>
       </div>

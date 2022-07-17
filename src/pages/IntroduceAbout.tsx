@@ -52,7 +52,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
             <br />
             먼저 이루며 이끌어 가고 있습니다.
           </p>
-          <img className={cx('image')} src="/assets/img/common/png/info_banner_1.png" />
+          <img className={cx('image')} src="/static/img/common/png/info_banner_1.png" />
           <div className={cx('sub_text_area')}>
             <strong className={cx('sub_text')}>대한민국 클라우드의 역사</strong>
             <p className={cx('sub_text')}>국내 최초 퍼블릭 클라우드 1호 인증</p>
@@ -67,7 +67,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
             <br />
             최적의 맞춤 서비스를 실현 합니다.
           </p>
-          <img className={cx('image')} src="/assets/img/common/png/info_banner_2.png" />
+          <img className={cx('image')} src="/static/img/common/png/info_banner_2.png" />
           <div className={cx('sub_text_area')}>
             <strong className={cx('sub_text')}>최상의 네트워크 인프라 환경</strong>
             <p className={cx('sub_text')}>
@@ -84,7 +84,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
             <br />
             더 나은 세상을 만들어 갑니다.
           </p>
-          <img className={cx('image')} src="/assets/img/common/png/info_banner_2.png" />
+          <img className={cx('image')} src="/static/img/common/png/info_banner_2.png" />
           <div className={cx('sub_text_area')}>
             <strong className={cx('sub_text')}>세계 최초 다중/동적 할당 기술</strong>
             <p className={cx('sub_text')}>
@@ -110,7 +110,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
                   <p className={cx('sub_text')}>국내 최초 퍼블릭 클라우드 1호 인증</p>
                 </div>
               </div>
-              <img src="/assets/img/common/png/info_banner_1.png" className={cx('image')} />
+              <img src="/static/img/common/png/info_banner_1.png" className={cx('image')} />
             </div>
           </div>
           <div className={cx('sub_content_wrap')}>
@@ -131,7 +131,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
                   <p className={cx('sub_text')}>국내 유일의 IDC - 클라우드 - 네트워크 인프라</p>
                 </div>
                 <div className={cx('thumb')}>
-                  <img src="/assets/img/common/png/info_banner_2.png" alt="" className={cx('image')} />
+                  <img src="/static/img/common/png/info_banner_2.png" alt="" className={cx('image')} />
                 </div>
               </li>
               <li className={cx('list')}>
@@ -148,7 +148,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
                   <p className={cx('sub_text')}>수백 수천개의 대규모 GPU 클러스터링으로 혁신적인 성능</p>
                 </div>
                 <div className={cx('thumb')}>
-                  <img src="/assets/img/common/png/info_banner_2.png" alt="" className={cx('image')} />
+                  <img src="/static/img/common/png/info_banner_2.png" alt="" className={cx('image')} />
                 </div>
               </li>
             </ul>
@@ -163,7 +163,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
         <ul className={cx('list_set')}>
           <li className={cx('list')}>
             <div className={cx('thumb')}>
-              <img src="/assets/img/common/png/ico_direction_1.png" className={cx('image')} alt="" />
+              <img src="/static/img/common/png/ico_direction_1.png" className={cx('image')} alt="" />
             </div>
             <div className={cx('sub_text_area')}>
               <span className={cx('sub_text')}>지속성장</span>
@@ -174,7 +174,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
           </li>
           <li className={cx('list')}>
             <div className={cx('thumb')}>
-              <img src="/assets/img/common/png/ico_direction_2.png" className={cx('image')} alt="" />
+              <img src="/static/img/common/png/ico_direction_2.png" className={cx('image')} alt="" />
             </div>
             <div className={cx('sub_text_area')}>
               <span className={cx('sub_text')}>제휴 투자</span>
@@ -185,7 +185,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
           </li>
           <li className={cx('list')}>
             <div className={cx('thumb')}>
-              <img src="/assets/img/common/png/ico_direction_3.png" className={cx('image')} alt="" />
+              <img src="/static/img/common/png/ico_direction_3.png" className={cx('image')} alt="" />
             </div>
             <div className={cx('sub_text_area')}>
               <span className={cx('sub_text')}>인재 육성</span>
@@ -196,7 +196,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
           </li>
           <li className={cx('list')}>
             <div className={cx('thumb')}>
-              <img src="/assets/img/common/png/ico_direction_4.png" className={cx('image')} alt="" />
+              <img src="/static/img/common/png/ico_direction_4.png" className={cx('image')} alt="" />
             </div>
             <div className={cx('sub_text_area')}>
               <span className={cx('sub_text')}>상생 협력</span>
@@ -207,7 +207,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
           </li>
           <li className={cx('list')}>
             <div className={cx('thumb')}>
-              <img src="/assets/img/common/png/ico_direction_5.png" className={cx('image')} alt="" />
+              <img src="/static/img/common/png/ico_direction_5.png" className={cx('image')} alt="" />
             </div>
             <div className={cx('sub_text_area')}>
               <span className={cx('sub_text')}>품질 최우선</span>
@@ -218,7 +218,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
           </li>
           <li className={cx('list')}>
             <div className={cx('thumb')}>
-              <img src="/assets/img/common/png/ico_direction_6.png" className={cx('image')} alt="" />
+              <img src="/static/img/common/png/ico_direction_6.png" className={cx('image')} alt="" />
             </div>
             <div className={cx('sub_text_area')}>
               <span className={cx('sub_text')}>ESG 경영</span>

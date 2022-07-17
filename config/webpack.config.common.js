@@ -28,7 +28,7 @@ const root = path.resolve(__dirname);
 
 module.exports = {
   //core-js/features/object: ie 대응
-  entry: ['core-js/features/object', './src/index.tsx', './assets/css/common.css'],
+  entry: ['core-js/features/object', './src/index.tsx', './static/css/common.css'],
   output: {
     filename: 'bundle.[hash].js',
     publicPath: '/'
