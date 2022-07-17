@@ -3,7 +3,7 @@
     "-- 로컬 dev 실행 ----": "",
     "dev": "webpack-dev-server --config config/webpack.config.js --mode=development",
     "-- prod ----": "",
-    "prod": "rimraf dist; nvm use; npm rebuild; yarn; webpack --config config/webpack.config.js --mode=production --optimize-minimize"
+    "prod": "webpack --config config/webpack.config.js --mode=production --optimize-minimize"
   },
   "engines": {
     "node": ">=14.17.3"
