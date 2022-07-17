@@ -33,11 +33,6 @@ export const routes = [
     component: lazy(() => import('@src/pages/IntroducePartners')),
   },
   {
-    path: URLInfo.INTRODUCE_LOCATION,
-    exact: true,
-    component: lazy(() => import('@src/pages/IntroduceLocation')),
-  },
-  {
     path: URLInfo.SERVICE_INDEX,
     exact: true,
     component: lazy(() => import('@src/pages/ServiceIndex')),

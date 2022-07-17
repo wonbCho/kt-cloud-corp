@@ -16,7 +16,22 @@ const scrollTop = (isSmooth = false) => {
   }
 };
 
+const moveTo = (target: HTMLElement, isSmooth?: boolean, diff?: number) => {
+  const posY = target.offsetTop - (diff || 0);
+
+  try {
+    if (isSmooth) {
+      window.scroll({ top: posY, left: 0, behavior: 'smooth' });
+    } else {
+      window.scrollTo(0, posY);
+    }
+  } catch (error) {
+    window.scrollTo(0, posY);
+  }
+};
+
 export default {
   getCurrentScrollTop,
   scrollTop,
+  moveTo,
 };

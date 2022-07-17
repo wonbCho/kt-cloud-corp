@@ -1,4 +1,4 @@
-export enum ETags {
+export enum ETag {
   ALL = 'All',
   IT = 'IT',
   EBIZ = 'eBiz, EC',

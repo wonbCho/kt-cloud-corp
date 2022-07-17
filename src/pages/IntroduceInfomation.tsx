@@ -16,7 +16,8 @@ const IntroduceInfomation: React.FC<IOwnProps> = ({ }) => {
     <div className={cx('introduceinfomation')}>
       <IntroduceBanner title='회사 정보' />
       <div className={cx('contents_wrap')}>
-        <div className={cx('info_wrap')}>
+
+        <div className={cx('corp_info_wrap')}>
           <strong className={cx('info_list_title')}>회사 일반 사항</strong>
           <ul className={cx('info_list_wrap')}>
             <li className={cx('info_list')}>
@@ -72,7 +73,8 @@ const IntroduceInfomation: React.FC<IOwnProps> = ({ }) => {
             </li>
           </ul>
         </div>
-        <div className={cx('corp_info_wrap')}>
+
+        <div className={cx('corp_info_down_wrap')}>
           <div className={cx('corp_down_wrap')}>
             <strong className={cx('info_title')}>회사 소개서</strong>
             <img className={cx('down_img')} src='/assets/img/common/png/crop_down_1.png' />
@@ -95,6 +97,45 @@ const IntroduceInfomation: React.FC<IOwnProps> = ({ }) => {
                 AI 다운로드
                 <img className={cx('down_link_img')} src='/assets/img/common/svg/front-link.svg' />
               </a>
+            </div>
+          </div>
+        </div>
+        <div className={cx('map_wrap')}>
+          <div className={cx('pc_wrapper')}>
+            <strong className={cx('map_title')}>오시는 길</strong>
+          </div>
+          <div className={cx('map')}></div>
+          <div className={cx('mobile_wrapper')}>
+            <strong className={cx('map_title')}>오시는 길</strong>
+          </div>
+          <div className={cx('map_info_wrap')}>
+            <div className={cx('list_wrap')}>
+              <div className={cx('pc_wrapper')}>
+                <strong className={cx('info_list_title')}>본사 주소 및 고객센터</strong>
+              </div>
+              <ul className={cx('info_list_wrap')}>
+                <li className={cx('info_list')}>
+                  <strong className={cx('info_title')}>본사 주소</strong>
+                  <span className={cx('info')}>서울특별시 강남구 학동로 343 (논현동, 더피나클강남) 15층</span>
+                </li>
+                <li className={cx('info_list')}>
+                  <strong className={cx('info_title')}>고객센터</strong>
+                  <span className={cx('info')}>080-2580-005</span>
+                </li>
+              </ul>
+            </div>
+            <div className={cx('list_wrap')}>
+              <strong className={cx('info_list_title', 'idc_title')}>IDC 위치</strong>
+              <ul className={cx('info_list_wrap')}>
+                <li className={cx('info_list')}>
+                  <strong className={cx('info_title')}>용산 IDC</strong>
+                  <span className={cx('info')}>서울특별시 강남구 학동로 343 (논현동, 더피나클강남) 15층</span>
+                </li>
+                <li className={cx('info_list')}>
+                  <strong className={cx('info_title')}>가산 IDC</strong>
+                  <span className={cx('info')}>서울특별시 강남구 학동로 343 (논현동, 더피나클강남) 15층</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

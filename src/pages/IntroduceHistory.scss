@@ -4,21 +4,44 @@
   }
 
   .sticky_area {
-    display: flex;
+    padding-top: 11px;
+
+    &.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-color: #000;
+    }
+
+    .list_set {
+      display: flex;
+      padding: 0 24px;
+    }
 
     .list {
       flex-grow: 1;
 
-      &[aria-selected=true] .text {
+      &[aria-selected=true] .title {
         border-color: #fff;
       }
 
-      &:nth-child(2) {
+      &:nth-child(1) .btn {
+        text-align: left;
+      }
+
+      &:nth-child(2) .btn {
         text-align: center;
       }
 
-      &:nth-child(3) {
+      &:nth-child(3) .btn {
         text-align: right;
+      }
+
+      .btn {
+        width: 100%;
+        color: #fff;
       }
 
       .title {
@@ -172,6 +195,7 @@
 
     .sticky_area {
       margin: 0 -15px;
+      padding-bottom: 11px;
 
       .list {
         margin: 0 15px;
