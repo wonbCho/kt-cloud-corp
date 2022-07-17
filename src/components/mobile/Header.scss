@@ -1,28 +1,37 @@
 .header {
 	position: absolute;
-	height: 57px;
 	left: 0;
 	right: 0;
 	z-index: 1;
+	padding: 14px 24px 14px;
+	display: flex;
+	justify-content: space-between;
 
 	&.fixed {
 		position: fixed;
 		background-color: #000;
+
+		.menu_wrap {
+			background-image: url("/assets/img/common/svg/black_menu_bar.svg");
+		}
+	}
+
+	&.light {
+		.header_title_wrap {
+			background-image: url("/assets/img/common/png/logo.png");
+		}
 	}
 
 	.header_title_wrap {
-		position: absolute;
-		top: 29px;
-		left: 24px;
+		width: 90px;
+		height: 22px;
+		background-image: url("/assets/img/common/png/logo_color.png");
 	}
 
 	.menu_wrap {
-		position: absolute;
-		top: 24px;
-		right: 24px;
 		width: 32px;
 		height: 32px;
-		background-color: #fff;
 		border-radius: 6px;
+		background-image: url("/assets/img/common/svg/menu-bar.svg");
 	}
 }

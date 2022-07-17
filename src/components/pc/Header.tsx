@@ -23,14 +23,9 @@ const Header: React.FC<IOwnProps> = ({ isLight }) => {
   const useFixed = location.pathname !== URLInfo.INTRODUCE_HISTORY && useScroll;
 
   return (
-    <div className={cx('header', useFixed && 'fixed')}>
+    <div className={cx('header', useFixed && 'fixed', isLight && 'light')}>
       <div className={cx('header_wrap')}>
         <Link to={URLInfo.MAIN} className={cx('header_title_wrap')}>
-          {isLight ? (
-            <img src="/assets/img/common/png/logo.png" />
-          ) : (
-            <img src="/assets/img/common/png/logo_color.png" />
-          )}
         </Link>
         <div className={cx('menu_list')}>
           <Link to={URLInfo.INTRODUCE_ABOUT} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_ABOUT}>기업소개</Link>

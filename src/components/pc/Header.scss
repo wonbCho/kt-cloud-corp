@@ -9,10 +9,17 @@
     background-color: #000;
   }
 
+  &.light {
+    .header_title_wrap {
+      background-image: url("/assets/img/common/png/logo.png");
+    }
+  }
+
   .header_wrap {
     position: relative;
     max-width: 1300px;
-    margin: 26px auto 0;
+    margin: 20px auto;
+
     height: 32px;
   }
 }
@@ -21,6 +28,9 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 90px;
+  height: 22px;
+  background-image: url("/assets/img/common/png/logo_color.png");
 }
 
 .header_img {
@@ -29,7 +39,7 @@
 
 .menu_list {
   position: absolute;
-  top: 0;
+  top: 6px;
   left: 50%;
   display: flex;
   transform: translateX(-50%);
@@ -59,7 +69,6 @@
   color: #fff;
 
   .console_img {
-
     margin-top: 4px;
   }
 }
