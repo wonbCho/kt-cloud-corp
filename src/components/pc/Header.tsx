@@ -3,26 +3,35 @@ import classNames from 'classnames/bind';
 import styles from './Header.scss';
 import { Link, useLocation } from 'react-router-dom';
 import URLInfo from '@src/constants/URLInfo';
+import useScrollFixed from '@src/hooks/useScrollFixed';
 
 const cx = classNames.bind(styles);
 
-interface IOwnProps { };
+interface IOwnProps {
+  isLight?: boolean;
+};
 
-const Header: React.FC<IOwnProps> = ({ }) => {
+const Header: React.FC<IOwnProps> = ({ isLight }) => {
   const location = useLocation();
   const [menu, setMenu] = useState<string>('');
+  const { useScroll } = useScrollFixed();
 
   useEffect(() => {
     setMenu(location.pathname);
   }, [location.pathname]);
 
+  const useFixed = location.pathname !== URLInfo.INTRODUCE_HISTORY && useScroll;
 
   return (
-    <div className={cx('header')}>
+    <div className={cx('header', useFixed && 'fixed')}>
       <div className={cx('header_wrap')}>
-        <div className={cx('header_title_wrap')}>
-          <img src="/assets/img/common/png/logo.png"></img>
-        </div>
+        <Link to={URLInfo.MAIN} className={cx('header_title_wrap')}>
+          {isLight ? (
+            <img src="/assets/img/common/png/logo.png" />
+          ) : (
+            <img src="/assets/img/common/png/logo_color.png" />
+          )}
+        </Link>
         <div className={cx('menu_list')}>
           <Link to={URLInfo.INTRODUCE_ABOUT} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_ABOUT}>기업소개</Link>
           <Link to={URLInfo.INTRODUCE_HISTORY} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_HISTORY}>연혁</Link>
