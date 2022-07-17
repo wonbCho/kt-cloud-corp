@@ -48,7 +48,7 @@ const Header: React.FC<IOwnProps> = ({ isLight }) => {
       </button> */}
           {/* [TODO]: 2차 스펙 */}
           {/* <button className={cx('menu_wrap')}>
-            <img src="/static/img/common/svg/menu-bar.svg"></img>
+            <img src="/static/img/common/svg/menu_bar.svg"></img>
           </button> */}
         </div>
       </div>

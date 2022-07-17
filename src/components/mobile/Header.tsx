@@ -13,7 +13,7 @@ interface IOwnProps {
 };
 
 const Header: React.FC<IOwnProps> = ({ isLight }) => {
-  const [showGNB, setShowGNB] = useState<boolean>(false);
+  const [showGNB, setShowGNB] = useState<boolean>(true);
   const { useScroll } = useScrollFixed();
 
   const useFixed = location.pathname !== URLInfo.INTRODUCE_HISTORY && useScroll;
