@@ -15,22 +15,18 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
       <div className={cx('introduce_history')}>
         <IntroduceBanner title='연혁' />
         <div className={cx('history_content')}>
-          <div className={cx('mobile_wrapper', 'm_sticky_area')}>
-            <strong className={cx('title')}>2001 ~</strong>
-            <p className={cx('text')}>대한민국 클라우드 서비스 역사의 한 획</p>
-          </div>
           <ul className={cx('pc_wrapper', 'sticky_area')}>
             <li className={cx('list')} aria-selected={true}>
               <strong className={cx('title')}>2001 ~</strong>
-              <p className={cx('text')}>대한민국 IDC의 시작</p>
+              <p className={cx('pc_wrapper', 'text')}>대한민국 IDC의 시작</p>
             </li>
             <li className={cx('list')} aria-selected={false}>
               <strong className={cx('title')}>2010 ~</strong>
-              <p className={cx('text')}>대한민국 클라우드 서비스 역사의 한 획</p>
+              <p className={cx('pc_wrapper', 'text')}>대한민국 클라우드 서비스 역사의 한 획</p>
             </li>
             <li className={cx('list')} aria-selected={false}>
               <strong className={cx('title')}>Now</strong>
-              <p className={cx('text')}>더 나은 일상을 만드는 지금</p>
+              <p className={cx('pc_wrapper', 'text')}>더 나은 일상을 만드는 지금</p>
             </li>
           </ul>
           <ul className={cx('content_1')}>

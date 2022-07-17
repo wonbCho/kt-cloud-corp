@@ -3,18 +3,31 @@
     padding: 20px 24px 40px;
   }
 
-  .m_sticky_area {
-    padding-bottom: 12px;
-    border-bottom: 1px solid #fff;
+  .sticky_area {
+    display: flex;
 
-    .title {
-      font-size: 24px;
-      line-height: 32px;
-    }
+    .list {
+      flex-grow: 1;
 
-    .text {
-      font-size: 16px;
-      line-height: 22px;
+      &[aria-selected=true] .text {
+        border-color: #fff;
+      }
+
+      &:nth-child(2) {
+        text-align: center;
+      }
+
+      &:nth-child(3) {
+        text-align: right;
+      }
+
+      .title {
+        display: block;
+        font-size: 24px;
+        line-height: 32px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #2f2f2f;
+      }
     }
   }
 
@@ -158,23 +171,10 @@
     margin: 0 auto;
 
     .sticky_area {
-      display: flex;
+      margin: 0 -15px;
 
       .list {
-        width: 325px;
-
-        &[aria-selected=true] .text {
-          border-color: #fff;
-        }
-
-        &:last-child {
-          width: auto;
-          flex-grow: 1;
-        }
-
-        &+.list {
-          margin-left: 32px;
-        }
+        margin: 0 15px;
 
         .title {
           font-size: 24px;
@@ -182,9 +182,7 @@
         }
 
         .text {
-          margin-top: 4px;
-          padding-top: 9px;
-          border-top: 1px solid #484848;
+          margin-top: 7px;
           font-size: 16px;
           line-height: 22px;
         }
