@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Pretendard;
+  src: local("Pretendard"),
+    /* computer */
+    url("/assets/font/Pretendard/Pretendard.woff2") format("woff2"),
+    /* Modern Browsers */
+    url("/assets/font/Pretendard/Pretendard.woff") format("woff"),
+    /* Modern Browsers */
+    url("/assets/font/Pretendard/Pretendard.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("/assets/font/Pretendard/Pretendard.eot"),
+    /* IE9 Compat Modes */
+    url("/assets/font/Pretendard/Pretendard.eot?#iefix") format("embedded-opentype");
+  /*IE6-IE8 */
+}
+
+@font-face {
+  font-family: Poppins;
+  src: local("Poppins"),
+    /* computer */
+    url("/assets/font/Poppins/Poppins.woff2") format("woff2"),
+    /* Modern Browsers */
+    url("/assets/font/Poppins/Poppins.woff") format("woff"),
+    /* Modern Browsers */
+    url("/assets/font/Poppins/Poppins.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("/assets/font/Poppins/Poppins.eot"),
+    /* IE9 Compat Modes */
+    url("/assets/font/Poppins/Poppins.eot?#iefix") format("embedded-opentype");
+  /*IE6-IE8 */
+}
