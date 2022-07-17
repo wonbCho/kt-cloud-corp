@@ -1,0 +1,60 @@
+.page_wrap {
+    background-color: #fff;
+    padding: 14px 24px;
+    color: #000;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+
+    .header_img {
+        width: 90px;
+        height: 22px;
+        background-image: url("/assets/img/common/png/logo-positive.png");
+    }
+
+    .close_img {
+        width: 32px;
+        height: 32px;
+        background-image: url("/assets/img/common/svg/black_close.svg");
+    }
+}
+
+.menu_list_wrap {
+    margin-top: 22px;
+
+    .menu_list {
+        padding: 13px 0;
+        border-bottom: 1px solid #ececec;
+        display: flex;
+    }
+
+    .menu_title {
+        font-size: 24px;
+        line-height: 34px;
+        width: 50%;
+        position: relative;
+    }
+
+    .link_bnt {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        background-image: url("/assets/img/common/svg/black_up_right_arrow.svg");
+    }
+
+    .menu_link_wrap {
+        display: flex;
+        flex-direction: column;
+
+        .menu_link {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 4px 0;
+
+        }
+    }
+}
