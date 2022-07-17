@@ -46,7 +46,7 @@ const IntroducePartners: React.FC<IOwnProps> = ({ }) => {
                 <li className={cx('list')} key={item}>
                   <a href="" className={cx('link')}>
                     <div className={cx('thumb')}>
-                      <img src="/assets/img/common/png/it_temp.png" alt="" className={cx('image')} />
+                      <img src="/static/img/common/png/it_temp.png" alt="" className={cx('image')} />
                     </div>
                     <p className={cx('description')}>주식회사 현대엠소프트</p>
                   </a>
@@ -63,7 +63,7 @@ const IntroducePartners: React.FC<IOwnProps> = ({ }) => {
                 <li className={cx('list')} key={item}>
                   <a href="" className={cx('link')}>
                     <div className={cx('thumb')}>
-                      <img src="/assets/img/common/png/it_temp.png" alt="" className={cx('image')} />
+                      <img src="/static/img/common/png/it_temp.png" alt="" className={cx('image')} />
                     </div>
                     <p className={cx('description')}>주식회사 현대엠소프트</p>
                   </a>
@@ -80,7 +80,7 @@ const IntroducePartners: React.FC<IOwnProps> = ({ }) => {
                 <li className={cx('list')} key={item}>
                   <a href="" className={cx('link')}>
                     <div className={cx('thumb')}>
-                      <img src="/assets/img/common/png/it_temp.png" alt="" className={cx('image')} />
+                      <img src="/static/img/common/png/it_temp.png" alt="" className={cx('image')} />
                     </div>
                     <p className={cx('description')}>주식회사 현대엠소프트</p>
                   </a>

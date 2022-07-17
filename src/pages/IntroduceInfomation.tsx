@@ -77,25 +77,25 @@ const IntroduceInfomation: React.FC<IOwnProps> = ({ }) => {
         <div className={cx('corp_info_down_wrap')}>
           <div className={cx('corp_down_wrap')}>
             <strong className={cx('info_title')}>회사 소개서</strong>
-            <img className={cx('down_img')} src='/assets/img/common/png/crop_down_1.png' />
+            <img className={cx('down_img')} src='/static/img/common/png/crop_down_1.png' />
             <div className={cx('down_link_wrap')}>
               <a className={cx('down_link')}>
                 PDF 다운로드
-                <img className={cx('down_link_img')} src='/assets/img/common/svg/front-link.svg' />
+                <img className={cx('down_link_img')} src='/static/img/common/svg/front-link.svg' />
               </a>
             </div>
           </div>
           <div className={cx('corp_down_wrap')}>
             <strong className={cx('info_title')}>kt cloud CI 사용 가이드</strong>
-            <img className={cx('down_img')} src='/assets/img/common/png/crop_down_2.png' />
+            <img className={cx('down_img')} src='/static/img/common/png/crop_down_2.png' />
             <div className={cx('down_link_wrap')}>
               <a className={cx('down_link')}>
                 가이드 PDF 다운로드
-                <img className={cx('down_link_img')} src='/assets/img/common/svg/front-link.svg' />
+                <img className={cx('down_link_img')} src='/static/img/common/svg/front-link.svg' />
               </a>
               <a className={cx('down_link')}>
                 AI 다운로드
-                <img className={cx('down_link_img')} src='/assets/img/common/svg/front-link.svg' />
+                <img className={cx('down_link_img')} src='/static/img/common/svg/front-link.svg' />
               </a>
             </div>
           </div>

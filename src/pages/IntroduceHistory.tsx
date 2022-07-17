@@ -93,7 +93,7 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
                 <span className={cx('location')}>분당 IDC 개소</span>
               </div>
               <div className={cx('thumb')}>
-                <img src="/assets/img/common/png/history_image_1.png" alt="" className={cx('image')} />
+                <img src="/static/img/common/png/history_image_1.png" alt="" className={cx('image')} />
               </div>
             </li>
             <li className={cx('list')}>
@@ -102,14 +102,14 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
                 <span className={cx('location')}>목동1 IDC 개소</span>
               </div>
               <div className={cx('thumb')}>
-                <img src="/assets/img/common/png/history_image_6.png" alt="" className={cx('image')} />
+                <img src="/static/img/common/png/history_image_6.png" alt="" className={cx('image')} />
               </div>
             </li>
           </ul>
           <ul className={cx('content_2')}>
             <li className={cx('list')} ref={historyRef_2}>
               <div className={cx('thumb')}>
-                <img src="/assets/img/common/png/history_image_2.png" alt="" className={cx('image')} />
+                <img src="/static/img/common/png/history_image_2.png" alt="" className={cx('image')} />
               </div>
               <div className={cx('main_text')}>
                 <strong className={cx('title')}>2010</strong>
@@ -119,7 +119,7 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
             </li>
             <li className={cx('list')}>
               <div className={cx('thumb')}>
-                <img src="/assets/img/common/png/history_image_3.png" alt="" className={cx('image')} />
+                <img src="/static/img/common/png/history_image_3.png" alt="" className={cx('image')} />
               </div>
               <div className={cx('main_text')}>
                 <strong className={cx('title')}>2011</strong>
@@ -134,11 +134,11 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
               <p className={cx('mobile_wrapper', 'location')}>목동1 IDC 개소</p>
               <div className={cx('thumb_area')}>
                 <div className={cx('thumb')}>
-                  <img src="/assets/img/common/png/history_image_4.png" alt="" className={cx('image')} />
+                  <img src="/static/img/common/png/history_image_4.png" alt="" className={cx('image')} />
                   <p className={cx('pc_wrapper', 'thumb_location')}>여의도 IDC 개소</p>
                 </div>
                 <div className={cx('thumb')}>
-                  <img src="/assets/img/common/png/history_image_5.png" alt="" className={cx('image')} />
+                  <img src="/static/img/common/png/history_image_5.png" alt="" className={cx('image')} />
                   <p className={cx('pc_wrapper', 'thumb_location')}>공공 Cloud 서비스 출시</p>
                 </div>
               </div>
@@ -148,11 +148,11 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
               <p className={cx('mobile_wrapper', 'location')}>목동1 IDC 개소</p>
               <div className={cx('thumb_area')}>
                 <div className={cx('thumb')}>
-                  <img src="/assets/img/common/png/history_image_4.png" alt="" className={cx('image')} />
+                  <img src="/static/img/common/png/history_image_4.png" alt="" className={cx('image')} />
                   <p className={cx('pc_wrapper', 'thumb_location')}>목동2 IDC 개소</p>
                 </div>
                 <div className={cx('thumb')}>
-                  <img src="/assets/img/common/png/history_image_5.png" alt="" className={cx('image')} />
+                  <img src="/static/img/common/png/history_image_5.png" alt="" className={cx('image')} />
                   <p className={cx('pc_wrapper', 'thumb_location')}>국내최초 ‘클라우드 컴퓨팅 보안인증’ 획득 </p>
                 </div>
               </div>
@@ -165,7 +165,7 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
                 <span className={cx('location')}>기업전용 Cloud, 금융특화 PSD 서비스 출시</span>
               </div>
               <div className={cx('thumb')}>
-                <img src="/assets/img/common/png/history_image_1.png" alt="" className={cx('image')} />
+                <img src="/static/img/common/png/history_image_1.png" alt="" className={cx('image')} />
               </div>
             </li>
             <li className={cx('list')}>
@@ -174,7 +174,7 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
                 <span className={cx('location')}>VMware Cloud 서비스 출시</span>
               </div>
               <div className={cx('thumb')}>
-                <img src="/assets/img/common/png/history_image_6.png" alt="" className={cx('image')} />
+                <img src="/static/img/common/png/history_image_6.png" alt="" className={cx('image')} />
               </div>
             </li>
             <li className={cx('list')}>
@@ -183,7 +183,7 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
                 <span className={cx('location')}>금융 Cloud, 5G Edge Cloud 서비스 출시</span>
               </div>
               <div className={cx('thumb')}>
-                <img src="/assets/img/common/png/history_image_6.png" alt="" className={cx('image')} />
+                <img src="/static/img/common/png/history_image_6.png" alt="" className={cx('image')} />
               </div>
             </li>
             <li className={cx('list')} ref={historyRef_3}>
@@ -192,14 +192,14 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
                 <span className={cx('location')}>용산 IDC 개소, DX Platform 출시</span>
               </div>
               <div className={cx('thumb')}>
-                <img src="/assets/img/common/png/history_image_6.png" alt="" className={cx('image')} />
+                <img src="/static/img/common/png/history_image_6.png" alt="" className={cx('image')} />
               </div>
             </li>
           </ul>
           <ul className={cx('content_2')}>
             <li className={cx('list')}>
               <div className={cx('thumb')}>
-                <img src="/assets/img/common/png/history_image_2.png" alt="" className={cx('image')} />
+                <img src="/static/img/common/png/history_image_2.png" alt="" className={cx('image')} />
               </div>
               <div className={cx('main_text')}>
                 <strong className={cx('title')}>2021</strong>
