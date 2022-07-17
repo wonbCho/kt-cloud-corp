@@ -1,4 +1,4 @@
-.info_wrap {
+.corp_info_wrap {
   margin: 50px 25px 0;
 
   .info_list_title {
@@ -34,8 +34,8 @@
   }
 }
 
-.corp_info_wrap {
-  margin: 50px 0 86px;
+.corp_info_down_wrap {
+  margin-top: 50px;
 
   .corp_down_wrap {
     margin-top: 50px;
@@ -72,7 +72,10 @@
 }
 
 .map_wrap {
-  margin-top: 50px;
+  margin: 50px 0 60px;
+}
+
+.map {
   width: 100%;
   height: 320px;
   background-color: #fff;
@@ -86,8 +89,8 @@
   font-weight: 500;
 }
 
-.info_wrap {
-  margin: 20px 25px 85px;
+.map_info_wrap {
+  margin: 20px 25px 0;
 
   .info_list_title {
     display: block;
@@ -130,7 +133,7 @@
     position: relative;
   }
 
-  .info_wrap {
+  .corp_info_wrap {
     margin: 100px 0 0 0;
 
     .info_list_title {
@@ -159,7 +162,7 @@
     }
   }
 
-  .corp_info_wrap {
+  .corp_info_down_wrap {
     margin: 60.8px -32px 100.3px;
     display: flex;
 
@@ -192,17 +195,18 @@
   }
 
   .map_wrap {
-    margin-top: 154px;
+    margin: 101px 0;
+  }
+
+  .map {
+    margin-top: 20px;
   }
 
   .map_title {
-    position: absolute;
-    top: -50px;
-    left: 0;
     margin: 0;
   }
 
-  .info_wrap {
+  .map_info_wrap {
     margin: 0;
 
     .info_list_title {
