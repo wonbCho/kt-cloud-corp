@@ -5,7 +5,6 @@ const URL = {
   INTRODUCE_HISTORY: '/corp/history',
   INTRODUCE_INFOMATION: '/corp/ci',
   INTRODUCE_PARTNERS: '/corp/partners',
-  INTRODUCE_LOCATION: '/corp/location',
   SERVICE_INDEX: '/service',
   SERVICE_CLOUD: '/sevice/cloud',
   SERVICE_G_CLOUD: '/service/g-cloud',
