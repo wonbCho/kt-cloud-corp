@@ -40,7 +40,7 @@ const Footer: React.FC<IOwnProps> = ({ }) => {
           <img className={cx('company_logo')} src='/assets/img/common/svg/logo-black.svg' />
         </div>
         <div className={cx('cooperation_btn_wrap')}>
-          <button className={cx('cooperation_btn')} aria-selected="false">Family Site</button>
+          <button className={cx('cooperation_btn')} aria-expanded="false">Family Site</button>
           <div className={cx('cooperation_corp_wrap')}>
             <a className={cx('cooperation_corp_link')} href='#'>item 2 item 2 item 2 item 2 item 2 item item 2 item</a>
             <a className={cx('cooperation_corp_link')} href='#'>item 2item 2item 2item 2item 2item 2item 2item 2</a>

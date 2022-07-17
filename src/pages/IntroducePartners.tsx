@@ -15,7 +15,13 @@ const IntroducePartners: React.FC<IOwnProps> = ({ }) => {
       <IntroduceBanner title="주요 관계사" />
       <div className={cx('content_area')}>
         <div className={cx('select_area')}>
-          <button type="button" className={cx('selected_btn')}>All</button>
+          <button type="button" className={cx('selected_btn')} aria-expanded="false">All</button>
+          <div className={cx('cooperation_corp_wrap')}>
+            <a className={cx('cooperation_corp_link')} href='#'>item 2 item 2 item 2 item 2 item 2 item item 2 item</a>
+            <a className={cx('cooperation_corp_link')} href='#'>item 2item 2item 2item 2item 2item 2item 2item 2</a>
+            <a className={cx('cooperation_corp_link')} href='#'>item 2item 2item 2item 2</a>
+            <a className={cx('cooperation_corp_link')} href='#'>item 2item 2item 2item 2item 2item 2</a>
+          </div>
         </div>
         <div className={cx('tab_list')}>
           <strong className={cx('title')}>IT</strong>
