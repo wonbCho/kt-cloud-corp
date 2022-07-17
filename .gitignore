@@ -2,8 +2,8 @@
 .idea
 .DS_Store
 **/node_modules/
-**/assets/img/sprite/*
-**/assets/scss/sprite/*
+**/static/img/sprite/*
+**/static/scss/sprite/*
 
 .vscode/
 

@@ -22,13 +22,13 @@ const Header: React.FC<IOwnProps> = ({ isLight }) => {
     <div className={cx('header', useFixed && 'fixed')}>
       <Link to={URLInfo.MAIN} className={cx('header_title_wrap')}>
         {isLight ? (
-          <img src="/assets/img/common/png/logo.png" />
+          <img src="/static/img/common/png/logo.png" />
         ) : (
-          <img src="/assets/img/common/png/logo_color.png" />
+          <img src="/static/img/common/png/logo_color.png" />
         )}
       </Link>
       <button className={cx('menu_wrap')} onClick={() => setShowGNB(true)}>
-        <img src="/assets/img/common/svg/menu-bar.svg"></img>
+        <img src="/static/img/common/svg/menu-bar.svg"></img>
       </button>
       {showGNB && (
         <GNB />

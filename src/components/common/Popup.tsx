@@ -36,7 +36,7 @@ const Popup: React.FC<IOwnProps> = ({ }) => {
               <button type="button" className={cx('close_text')} onClick={handleClickHide}>오늘 하루 보지 않기</button>
               <button onClick={() => setShowPopup(false)}>
                 <span className={cx('pc_wrapper', 'close_text')}>팝업닫기</span>
-                <img className={cx('close_img')} src='/assets/img/common/svg/white_close.svg' />
+                <img className={cx('close_img')} src='/static/img/common/svg/white_close.svg' />
               </button>
             </div>
           </div>

@@ -16,17 +16,17 @@ const Main: React.FC<IOwnProps> = ({ }) => {
     <div className={cx('main')}>
       <Popup />
       <div className={cx('banner')}>
-        <Header  />
+        <Header />
         <div className={cx('pc_wrapper')}>
-          <img src='/assets/img/pc/png/main.png' className={cx('banner_img')}></img>
+          <img src='/static/img/pc/png/main.png' className={cx('banner_img')}></img>
         </div>
         <div className={cx('mobile_wrapper')}>
-          <img src='/assets/img/mobile/png/main.png' className={cx('banner_img')}></img>
+          <img src='/static/img/mobile/png/main.png' className={cx('banner_img')}></img>
         </div>
         <div className={cx('banner_wrap')}>
           <a className={cx('pc_wrapper', 'event_link')} href='#'>
             이벤트명
-            <img className={cx('event_lmg')} src='/assets/img/common/svg/btn-link.svg' />
+            <img className={cx('event_lmg')} src='/static/img/common/svg/btn-link.svg' />
           </a>
           <strong className={cx('banner_text_wrap')}>당신의 새로운 일상을 이어갑니다.</strong>
           <div className={cx('background_pagenation_wrap')}>
@@ -41,15 +41,15 @@ const Main: React.FC<IOwnProps> = ({ }) => {
         <strong className={cx('connect_text')}>Connect New Life</strong>
         <div className={cx('connect_area')}>
           <div className={cx('connect_img_wrap')}>
-            <img className={cx('connect_img')} src='/assets/img/common/png/rectangle-9.png'></img>
+            <img className={cx('connect_img')} src='/static/img/common/png/rectangle-9.png'></img>
             <strong className={cx('connect_title')}>Ture Cloud</strong>
           </div>
           <div className={cx('connect_img_wrap')}>
-            <img className={cx('connect_img')} src='/assets/img/common/png/rectangle-10.png'></img>
+            <img className={cx('connect_img')} src='/static/img/common/png/rectangle-10.png'></img>
             <strong className={cx('connect_title')}>Digital Transformation for all X</strong>
           </div>
           <div className={cx('connect_img_wrap')}>
-            <img className={cx('connect_img')} src='/assets/img/common/png/rectangle-11.png'></img>
+            <img className={cx('connect_img')} src='/static/img/common/png/rectangle-11.png'></img>
             <strong className={cx('connect_title')}>Hyper AI Computing</strong>
           </div>
         </div>
@@ -65,13 +65,13 @@ const Main: React.FC<IOwnProps> = ({ }) => {
         </div>
       </div>
       <div className={cx('idc_service_wrap')}>
-        <img className={cx('pc_wrapper', 'idc_service_img')} src='/assets/img/pc/png/stage.png'></img>
-        <img className={cx('mobile_wrapper', 'idc_service_img')} src='/assets/img/mobile/png/stage.png'></img>
+        <img className={cx('pc_wrapper', 'idc_service_img')} src='/static/img/pc/png/stage.png'></img>
+        <img className={cx('mobile_wrapper', 'idc_service_img')} src='/static/img/mobile/png/stage.png'></img>
         <strong className={cx('idc_service_title')}>IDC Service</strong>
         <strong className={cx('idc_service_sub_title')}>World Standard Data Center</strong>
         <a href='#' className={cx('idc_service_link')}>
           <span className={cx('pc_wrapper')}>자세히 알아보기</span>
-          <img className={cx('idc_service_link_img')} src='/assets/img/common/svg/btn-link.svg' />
+          <img className={cx('idc_service_link_img')} src='/static/img/common/svg/btn-link.svg' />
         </a>
         <p className={cx('idc_service_text')}>대한민국 첫 데이터센터 가장 안전하며 대한민국을 넘어 세계 표준의 환경을 제공합니다</p>
         <div className={cx('background_pagenation_wrap')}>
@@ -91,7 +91,7 @@ const Main: React.FC<IOwnProps> = ({ }) => {
           <li className={cx('news_contents_wrap')}>
             <div className={cx('contents_wrap')}>
               <a className={cx('news_img_wrap')} href=''>
-                <img className={cx('news_img')} src='/assets/img/common/png/img1.png' />
+                <img className={cx('news_img')} src='/static/img/common/png/img1.png' />
               </a>
               <p className={cx('news_title')}>KT 클라우드, 출정식 개최…클라우드·IDC 역량 결집</p>
               <p className={cx('news_date')}>2022.06.08</p>
@@ -100,7 +100,7 @@ const Main: React.FC<IOwnProps> = ({ }) => {
           <li className={cx('news_contents_wrap')}>
             <div className={cx('contents_wrap')}>
               <a className={cx('news_img_wrap')} href=''>
-                <img className={cx('news_img')} src='/assets/img/common/png/img2.png' />
+                <img className={cx('news_img')} src='/static/img/common/png/img2.png' />
               </a>
               <p className={cx('news_title')}>KT, 클라우드 생태계 상생 확대, 장터 입점 기업 수익 보전</p>
               <p className={cx('news_date')}>2022.06.08</p>
@@ -109,7 +109,7 @@ const Main: React.FC<IOwnProps> = ({ }) => {
           <li className={cx('news_contents_wrap')}>
             <div className={cx('contents_wrap')}>
               <a className={cx('news_img_wrap')} href=''>
-                <img className={cx('news_img')} src='/assets/img/common/png/img3.png' />
+                <img className={cx('news_img')} src='/static/img/common/png/img3.png' />
               </a>
               <p className={cx('news_title')}>KT-틸론, DaaS 플랫폼 공동개발 MOU 체결</p>
               <p className={cx('news_date')}>2022.06.08</p>
@@ -118,7 +118,7 @@ const Main: React.FC<IOwnProps> = ({ }) => {
           <li className={cx('news_contents_wrap')}>
             <div className={cx('contents_wrap')}>
               <a className={cx('news_img_wrap')} href=''>
-                <img className={cx('news_img')} src='/assets/img/common/png/img4.png' />
+                <img className={cx('news_img')} src='/static/img/common/png/img4.png' />
               </a>
               <p className={cx('news_title')}>KT, 소상공인시장진흥공단 클라우드 전환사업 수주</p>
               <p className={cx('news_date')}>2022.06.08</p>
@@ -127,7 +127,7 @@ const Main: React.FC<IOwnProps> = ({ }) => {
           <li className={cx('news_contents_wrap')}>
             <div className={cx('contents_wrap')}>
               <a className={cx('news_img_wrap')} href=''>
-                <img className={cx('news_img')} src='/assets/img/common/png/img5.png' />
+                <img className={cx('news_img')} src='/static/img/common/png/img5.png' />
               </a>
               <p className={cx('news_title')}>개방형 공공 클라우드 KT 파스타, CSAP 획득</p>
               <p className={cx('news_date')}>2022.06.08</p>
@@ -136,7 +136,7 @@ const Main: React.FC<IOwnProps> = ({ }) => {
           <li className={cx('news_contents_wrap')}>
             <div className={cx('contents_wrap')}>
               <a className={cx('news_img_wrap')} href=''>
-                <img className={cx('news_img')} src='/assets/img/common/png/img6.png' />
+                <img className={cx('news_img')} src='/static/img/common/png/img6.png' />
               </a>
               <p className={cx('news_title')}>KT 2분기 DX 선전 이끈 클라우드의 힘</p>
               <p className={cx('news_date')}>2022.06.08</p>
