@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
 import { Switch, BrowserRouter, Route } from 'react-router-dom';
 import { routes } from './routes';
@@ -22,6 +22,7 @@ const App = () => {
                 component={route.component}
               />
             )}
+            <Route component={lazy(() => import('@src/pages/NotFound'))} />
           </Switch>
         </Suspense>
       </BrowserRouter>
