@@ -75,6 +75,27 @@
       margin: 0 auto;
     }
 
+    .tag_select_area {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 0 -15px;
+
+      .selected_btn {
+        margin: 0 15px;
+        padding-bottom: 9px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        border-bottom: 1px solid #2f2f2f;
+        flex-grow: 1;
+        text-align: left;
+
+        &[aria-selected=true] {
+          border-color: #fff;
+        }
+      }
+    }
+
     .tab_list {
       margin-top: 38px;
 
