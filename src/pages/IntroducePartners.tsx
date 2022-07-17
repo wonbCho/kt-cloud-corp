@@ -42,7 +42,7 @@ const IntroducePartners: React.FC<IOwnProps> = ({ }) => {
           <div className={cx('tab_list')}>
             <strong className={cx('title')}>IT</strong>
             <ul className={cx('content_set')}>
-              {[...new Array(3)].map(item => (
+              {[...new Array(3).keys()].map(item => (
                 <li className={cx('list')} key={item}>
                   <a href="" className={cx('link')}>
                     <div className={cx('thumb')}>
@@ -59,7 +59,7 @@ const IntroducePartners: React.FC<IOwnProps> = ({ }) => {
           <div className={cx('tab_list')}>
             <strong className={cx('title')}>eBiz, EC</strong>
             <ul className={cx('content_set')}>
-              {[...new Array(3)].map(item => (
+              {[...new Array(3).keys()].map(item => (
                 <li className={cx('list')} key={item}>
                   <a href="" className={cx('link')}>
                     <div className={cx('thumb')}>
@@ -76,7 +76,7 @@ const IntroducePartners: React.FC<IOwnProps> = ({ }) => {
           <div className={cx('tab_list')}>
             <strong className={cx('title')}>Game</strong>
             <ul className={cx('content_set')}>
-              {[...new Array(3)].map(item => (
+              {[...new Array(3).keys()].map(item => (
                 <li className={cx('list')} key={item}>
                   <a href="" className={cx('link')}>
                     <div className={cx('thumb')}>

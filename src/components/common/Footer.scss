@@ -76,7 +76,6 @@
   }
 
   .cooperation_corp_wrap {
-    display: none;
     position: absolute;
     padding-bottom: 18px;
     bottom: 25px;
@@ -93,6 +92,7 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      color: #fff;
     }
   }
 }
