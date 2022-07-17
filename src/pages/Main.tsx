@@ -4,6 +4,7 @@ import styles from './Main.scss';
 import Foorter from '@src/components/common/Footer';
 import Header from '@src/components/common/Header';
 import CardItem from '@src/components/common/CardItem';
+import Popup from '@src/components/common/Popup';
 
 interface IOwnProps {
 };
@@ -13,6 +14,7 @@ const cx = classNames.bind(styles);
 const Main: React.FC<IOwnProps> = ({ }) => {
   return (
     <div className={cx('main')}>
+      <Popup />
       <div className={cx('banner')}>
         <Header  />
         <div className={cx('pc_wrapper')}>
