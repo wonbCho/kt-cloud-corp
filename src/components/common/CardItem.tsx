@@ -11,7 +11,7 @@ const CardItem: React.FC<IOwnProps> = ({ }) => {
     <div className={cx('card_item')}>
       <div className={cx('career_esg_wrap')}>
         <div className={cx('career_esg')}>
-          <img className={cx('career_esg_img')} src='/static/img/common/png/group-28@2x.png' />
+          <img className={cx('career_esg_img')} src='/assets/img/common/png/group-28@2x.png' />
           <div className={cx('text_wrap')}>
             <strong className={cx('career_esg_title')}>Career</strong>
             <p className={cx('career_esg_text')}>
@@ -21,12 +21,12 @@ const CardItem: React.FC<IOwnProps> = ({ }) => {
             </p>
             <a className={cx('career_esg_link')}>
               <span className={cx('pc_wrapper')}>인재채용</span>
-              <img className={cx('career_esg_link_img')} src='/static/img/common/svg/btn-external-link.svg' />
+              <img className={cx('career_esg_link_img')} src='/assets/img/common/svg/btn-external-link.svg' />
             </a>
           </div>
         </div>
         <div className={cx('career_esg')}>
-          <img className={cx('career_esg_img')} src='/static/img/common/png/group-46@2x.png' />
+          <img className={cx('career_esg_img')} src='/assets/img/common/png/group-46@2x.png' />
           <div className={cx('text_wrap')}>
             <strong className={cx('career_esg_title')}>ESG</strong>
             <p className={cx('career_esg_text')}>
@@ -36,7 +36,7 @@ const CardItem: React.FC<IOwnProps> = ({ }) => {
             </p>
             <a className={cx('career_esg_link')}>
               <span className={cx('pc_wrapper')}>ESG 경영</span>
-              <img className={cx('career_esg_link_img')} src='/static/img/common/svg/ico-link.svg' />
+              <img className={cx('career_esg_link_img')} src='/assets/img/common/svg/ico-link.svg' />
             </a>
           </div>
         </div>

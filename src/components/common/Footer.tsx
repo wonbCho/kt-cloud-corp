@@ -47,7 +47,7 @@ const Footer: React.FC<IOwnProps> = ({ }) => {
           </div>
         </div>
         <div className={cx('company_name')}>
-          <img className={cx('company_logo')} src='/static/img/common/svg/logo-black.svg' />
+          <img className={cx('company_logo')} src='/assets/img/common/svg/logo-black.svg' />
         </div>
         <div className={cx('cooperation_btn_wrap')}>
           <button className={cx('cooperation_btn')} aria-expanded={showSiteLayer} onClick={() => setShowSiteLayer(!showSiteLayer)}>{site}</button>
