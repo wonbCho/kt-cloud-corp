@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import URLInfo from '@src/constants/URLInfo';
 import useScrollFixed from '@src/hooks/useScrollFixed';
 import GNB from './GNB';
+import useNoScroll from '@src/hooks/useNoScroll';
 
 const cx = classNames.bind(styles);
 
@@ -15,6 +16,8 @@ interface IOwnProps {
 const Header: React.FC<IOwnProps> = ({ isLight }) => {
   const [showGNB, setShowGNB] = useState<boolean>(false);
   const { useScroll } = useScrollFixed();
+
+  useNoScroll([showGNB]);
 
   const useFixed = location.pathname !== URLInfo.INTRODUCE_HISTORY && useScroll;
 
@@ -27,7 +30,7 @@ const Header: React.FC<IOwnProps> = ({ isLight }) => {
         </button>
       </div>
       {showGNB && (
-        <GNB />
+        <GNB onClose={() => setShowGNB(false)} />
       )}
     </div>
   );
