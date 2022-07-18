@@ -35,7 +35,7 @@ const GNB: React.FC<IOwnProps> = ({
             <Link to={URLInfo.INTRODUCE_INFOMATION} className={cx('menu_title_link')} onClick={onClose}>회사 정보</Link>
           </li>
           <li className={cx('menu_list')}>
-            <Link to={'#'} className={cx('menu_title_link')} onClick={onClose}>ESG 경영</Link>
+            <Link to={URLInfo.INTRODUCE_ABOUT_ETHICS} className={cx('menu_title_link')} onClick={onClose}>ESG 경영</Link>
           </li>
           <li className={cx('menu_list')}>
             <Link to={URLInfo.INTRODUCE_PARTNERS} className={cx('menu_title_link')} onClick={onClose}>주요 관계사</Link>

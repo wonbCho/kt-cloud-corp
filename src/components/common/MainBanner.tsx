@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import classNames from 'classnames/bind';
 import styles from './MainBanner.scss';
 import Flicking, { ViewportSlot } from '@egjs/react-flicking';
 import { AutoPlay, Pagination } from '@egjs/flicking-plugins';
 import FlickingPagination from './FlickingPagination';
+import { useResize } from '@src/hooks/useResize';
 
 const cx = classNames.bind(styles);
 
 interface IOwnProps { };
 
 const MainBanner: React.FC<IOwnProps> = ({ }) => {
+  const bannerRef = useRef<HTMLDivElement>(null);
+
+  const { height, isMobileSize } = useResize();
   const plugins = [new AutoPlay({ duration: 10000 }), new Pagination({ type: 'bullet' })];
 
+  useEffect(() => {
+    if (bannerRef.current && isMobileSize) {
+      bannerRef.current.style.setProperty('--vh', (height * 0.01) + 'px');
+    }
+  }, []);
+
+
   return (
-    <div className={cx('main_banner')}>
+    <div className={cx('main_banner')} ref={bannerRef}>
       <Flicking plugins={plugins} circular={true} resizeOnContentsReady={true}>
         <div className={cx('banner_item')}>
           <img src='/static/img/common/png/main_1.png' className={cx('banner_img')} />
