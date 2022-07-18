@@ -1,0 +1,79 @@
+.about_banner {
+  position: relative;
+
+  .connect_text {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 1;
+  }
+
+  .connect_area {
+    overflow: hidden;
+    white-space: nowrap;
+    .connect_video_wrap {
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      padding-top: 100%;
+      vertical-align: top;
+
+      .connect_video {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        bottom: -50%;
+        right: -50%;
+        width: 100%;
+        margin: auto;
+      }
+
+      .connect_title {
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .kt_cloud_learn_wrap {
+    padding: 24px 24px 43px;
+    background-color: #00080f;
+  
+    .learn_text {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: normal;
+  
+    }
+  
+    .learn_link {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin-top: 24px;
+      line-height: 24px;
+  
+      &:before {
+        position: absolute;
+        top: 0;
+        right: -36px;
+        width: 24px;
+        height: 24px;
+        content: '';
+        background-image: url('/static/img/common/svg/btn_link.svg');
+      }
+    }
+  }
+
+  .pagenation_wrap {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+  }
+}

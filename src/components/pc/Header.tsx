@@ -31,7 +31,7 @@ const Header: React.FC<IOwnProps> = ({ isLight }) => {
           <Link to={URLInfo.INTRODUCE_ABOUT} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_ABOUT}>기업소개</Link>
           <Link to={URLInfo.INTRODUCE_HISTORY} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_HISTORY}>연혁</Link>
           <Link to={URLInfo.INTRODUCE_INFOMATION} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_INFOMATION}>회사정보</Link>
-          <Link to='#' className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_INFOMATION}>ESG 경영</Link>
+          <Link to={URLInfo.INTRODUCE_ABOUT_ETHICS} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_INFOMATION}>ESG 경영</Link>
           <Link to={URLInfo.INTRODUCE_PARTNERS} className={cx('link')} aria-selected={menu === URLInfo.INTRODUCE_PARTNERS}>주요 관계사</Link>
         </div>
         <div className={cx('menu_bar_wrap')}>
