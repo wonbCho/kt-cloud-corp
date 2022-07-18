@@ -41,15 +41,15 @@ const Main: React.FC<IOwnProps> = ({ }) => {
         <strong className={cx('connect_text')}>Connect New Life</strong>
         <div className={cx('connect_area')}>
           <div className={cx('connect_img_wrap')}>
-            <img className={cx('connect_img')} src='/static/img/common/png/rectangle-9.png'></img>
+            <img className={cx('connect_img')} src='/static/img/common/png/info_banner_1.png'></img>
             <strong className={cx('connect_title')}>Ture Cloud</strong>
           </div>
           <div className={cx('connect_img_wrap')}>
-            <img className={cx('connect_img')} src='/static/img/common/png/rectangle-10.png'></img>
+            <img className={cx('connect_img')} src='/static/img/common/png/info_banner_2.png'></img>
             <strong className={cx('connect_title')}>Digital Transformation for all X</strong>
           </div>
           <div className={cx('connect_img_wrap')}>
-            <img className={cx('connect_img')} src='/static/img/common/png/rectangle-11.png'></img>
+            <img className={cx('connect_img')} src='/static/img/common/png/info_banner_3.png'></img>
             <strong className={cx('connect_title')}>Hyper AI Computing</strong>
           </div>
         </div>
