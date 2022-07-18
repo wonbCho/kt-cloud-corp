@@ -185,7 +185,7 @@ const IntroduceAbout: React.FC<IOwnProps> = ({ }) => {
           </li>
           <li className={cx('list')}>
             <div className={cx('thumb')}>
-              <img src="/static/img/common/png/ico_direction_3.png" className={cx('image')} alt="" />
+              <img src="/static/img/common/png/ico_direction_3.svg" className={cx('image')} alt="" />
             </div>
             <div className={cx('sub_text_area')}>
               <span className={cx('sub_text')}>인재 육성</span>

@@ -13,6 +13,7 @@ const URL = {
   BOARD_PRESS_DETAIL: '/media/press/detail/:id',
   BOARD_NOTICE: '/media/notice',
   BOARD_NOTICE_DETAIL: '/media/notice/detail/:id',
+  INTRODUCE_ABOUT_ETHICS: '/corp/ethics',
 };
 
 export default {

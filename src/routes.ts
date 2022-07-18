@@ -72,4 +72,9 @@ export const routes = [
     exact: true,
     component: lazy(() => import('@src/pages/BoardNoticeDetail')),
   },
+  {
+    path: URLInfo.INTRODUCE_ABOUT_ETHICS,
+    exact: true,
+    component: lazy(() => import('@src/pages/IntroduceAboutEthics')),
+  },
 ];
