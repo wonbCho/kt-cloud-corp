@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './MainBanner.scss';
 import Flicking, { ViewportSlot } from '@egjs/react-flicking';
 import { AutoPlay, Pagination } from '@egjs/flicking-plugins';
+import FlickingPagination from './FlickingPagination';
 
 const cx = classNames.bind(styles);
 
@@ -13,7 +14,7 @@ const MainBanner: React.FC<IOwnProps> = ({ }) => {
 
   return (
     <div className={cx('main_banner')}>
-      <Flicking plugins={plugins} circular={true}>
+      <Flicking plugins={plugins} circular={true} resizeOnContentsReady={true}>
         <div className={cx('banner_item')}>
           <img src='/static/img/common/png/main_1.png' className={cx('banner_img')} />
           <div className={cx('content_wrap')}>
@@ -63,7 +64,9 @@ const MainBanner: React.FC<IOwnProps> = ({ }) => {
         </div>
         <ViewportSlot>
           <div className={cx('mobile_wrapper')}>
-            <div className={cx('background_pagenation_wrap', 'flicking-pagination')}></div>
+            <div className={cx('background_pagenation_wrap')}>
+              <FlickingPagination />
+            </div>
           </div>
         </ViewportSlot>
       </Flicking >

@@ -6,6 +6,8 @@ import Header from '@src/components/common/Header';
 import CardItem from '@src/components/common/CardItem';
 import Popup from '@src/components/common/Popup';
 import MainBanner from '@src/components/common/MainBanner';
+import AboutBanner from '@src/components/common/AboutBanner';
+import ServiceBanner from '@src/components/common/ServiceBanner';
 
 interface IOwnProps {
 };
@@ -18,50 +20,8 @@ const Main: React.FC<IOwnProps> = ({ }) => {
       <Popup />
       <Header />
       <MainBanner />
-
-      <div className={cx('connect_wrap')}>
-        <strong className={cx('connect_text')}>Connect New Life</strong>
-        <div className={cx('connect_area')}>
-          <div className={cx('connect_img_wrap')}>
-            <img className={cx('connect_img')} src='/static/img/common/png/rectangle-9.png'></img>
-            <strong className={cx('connect_title')}>Ture Cloud</strong>
-          </div>
-          <div className={cx('connect_img_wrap')}>
-            <img className={cx('connect_img')} src='/static/img/common/png/rectangle-10.png'></img>
-            <strong className={cx('connect_title')}>Digital Transformation for all X</strong>
-          </div>
-          <div className={cx('connect_img_wrap')}>
-            <img className={cx('connect_img')} src='/static/img/common/png/rectangle-11.png'></img>
-            <strong className={cx('connect_title')}>Hyper AI Computing</strong>
-          </div>
-        </div>
-        <div className={cx('kt_cloud_learn_wrap')}>
-          <p className={cx('learn_text')}>
-            새로운 일상으로의 연결,
-            <br />
-            KT Cloud로 일상의 디지털을 이어갑니다.
-          </p>
-          <div className={cx('mobile_wrapper')}>
-            <a href='#' className={cx('learn_link')}>자세히 알아보기</a>
-          </div>
-        </div>
-      </div>
-      <div className={cx('idc_service_wrap')}>
-        <img className={cx('pc_wrapper', 'idc_service_img')} src='/static/img/pc/png/stage.png'></img>
-        <img className={cx('mobile_wrapper', 'idc_service_img')} src='/static/img/mobile/png/stage.png'></img>
-        <strong className={cx('idc_service_title')}>IDC Service</strong>
-        <strong className={cx('idc_service_sub_title')}>World Standard Data Center</strong>
-        <a href='#' className={cx('idc_service_link')}>
-          <span className={cx('pc_wrapper')}>자세히 알아보기</span>
-          <img className={cx('idc_service_link_img')} src='/static/img/common/svg/btn-link.svg' />
-        </a>
-        <p className={cx('idc_service_text')}>대한민국 첫 데이터센터 가장 안전하며 대한민국을 넘어 세계 표준의 환경을 제공합니다</p>
-        <div className={cx('background_pagenation_wrap')}>
-          <div className={cx('background_pagenation')} aria-selected="true"></div>
-          <div className={cx('background_pagenation')} aria-selected="false"></div>
-          <div className={cx('background_pagenation')} aria-selected="false"></div>
-        </div>
-      </div>
+      <AboutBanner />
+      <ServiceBanner />
       <div className={cx('main_contents_wrap')}>
         <strong className={cx('kt_cloud_news')}>
           KT Cloud가

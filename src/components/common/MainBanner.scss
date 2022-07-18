@@ -17,14 +17,6 @@
     .event_link:after {
       background-image: url('/static/img/common/svg/btn_link_black.svg');
     }
-
-    .background_pagenation_wrap .background_pagenation {
-      border-color: #000;
-
-      &[aria-selected=true] {
-        background-color: #000;
-      }
-    }
   }
 }
 
@@ -79,20 +71,6 @@
   bottom: 35px;
   left: 24px;
   display: flex;
-
-  :global(.flicking-pagination-bullet) {
-    width: 10px;
-    height: 10px;
-    opacity: 0.2;
-    border-radius: 2px;
-    border: solid 1px #fff;
-    margin-left: 5px;
-
-    &:global(.flicking-pagination-bullet-active) {
-      opacity: 1;
-      background-color: #fff;
-    }
-  }
 }
 
 @media (min-width: 1300px) {
