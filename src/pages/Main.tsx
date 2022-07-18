@@ -5,6 +5,7 @@ import Foorter from '@src/components/common/Footer';
 import Header from '@src/components/common/Header';
 import CardItem from '@src/components/common/CardItem';
 import Popup from '@src/components/common/Popup';
+import MainBanner from '@src/components/common/MainBanner';
 
 interface IOwnProps {
 };
@@ -15,27 +16,8 @@ const Main: React.FC<IOwnProps> = ({ }) => {
   return (
     <div className={cx('main')}>
       <Popup />
-      <div className={cx('banner')}>
-        <Header />
-        <div className={cx('pc_wrapper')}>
-          <img src='/static/img/pc/png/main.png' className={cx('banner_img')}></img>
-        </div>
-        <div className={cx('mobile_wrapper')}>
-          <img src='/static/img/mobile/png/main.png' className={cx('banner_img')}></img>
-        </div>
-        <div className={cx('banner_wrap')}>
-          <a className={cx('pc_wrapper', 'event_link')} href='#'>
-            이벤트명
-            <img className={cx('event_lmg')} src='/static/img/common/svg/btn-link.svg' />
-          </a>
-          <strong className={cx('banner_text_wrap')}>당신의 새로운 일상을 이어갑니다.</strong>
-          <div className={cx('background_pagenation_wrap')}>
-            <div className={cx('background_pagenation')} aria-selected="true"></div>
-            <div className={cx('background_pagenation')} aria-selected="false"></div>
-            <div className={cx('background_pagenation')} aria-selected="false"></div>
-          </div>
-        </div>
-      </div>
+      <Header />
+      <MainBanner />
 
       <div className={cx('connect_wrap')}>
         <strong className={cx('connect_text')}>Connect New Life</strong>

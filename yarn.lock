@@ -971,6 +971,59 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
+"@egjs/agent@^2.2.1":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@egjs/agent/-/agent-2.4.2.tgz#9a0efb4ae36e4f1ee869008fbcafbddb8760c7de"
+  integrity sha512-UZQzdpPl0g0M1wDAiq4EY2vUzUI6P5SKGOAPkf0yxSnlcwrU8/zuoyUWbYj11ROFeHV8iW0IetGsmia83z1Hbw==
+
+"@egjs/axes@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@egjs/axes/-/axes-3.4.0.tgz#655861677c1452995c9f83d314b8f09a3c6853d8"
+  integrity sha512-9XEbYOTPjROLJ9RYDms4JJjaJyrBZN1AWxdpKQqA6PN3lhDQtw6jdgY/e6tfY46L3nWPW5PLdo5woE7cY2sL9Q==
+  dependencies:
+    "@egjs/agent" "^2.2.1"
+    "@egjs/component" "^3.0.1"
+
+"@egjs/component@^3.0.1":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@egjs/component/-/component-3.0.2.tgz#c56794fcf1b2cb2768d09b021444779e54d0de1b"
+  integrity sha512-Mze3mwEE19+dERrimg0JVLtpOHG4AC+LOuKqvF4qGZjn0k23ZbNI7b/gy1LFR63LigC2b8k70aDjy8xoT+WNPA==
+
+"@egjs/flicking-plugins@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@egjs/flicking-plugins/-/flicking-plugins-4.4.0.tgz#05405b6536efefaa1dd09de5cb12ecc9c69e96d2"
+  integrity sha512-PhhA9XB8145QxLAhIPDfzSszMvW02Be5ZbJFUkwgfkzt/A1QvJ56W02Nv4yAwjLIl48hI8MF0enG0RL3AuP3Uw==
+
+"@egjs/flicking@~4.9.1":
+  version "4.9.1"
+  resolved "https://registry.yarnpkg.com/@egjs/flicking/-/flicking-4.9.1.tgz#6d3e95edc08d09d22b84cef7dd40911e76df2846"
+  integrity sha512-j3d0FVnvuzXA4DQhDVMeiobRzLvg1Yzlg0nF7I/Jvld/eW2Bb3qi7mVy6EWw1E8N7iA44633BHgM2u8ijMMdYQ==
+  dependencies:
+    "@egjs/axes" "^3.4.0"
+    "@egjs/component" "^3.0.1"
+    "@egjs/imready" "^1.1.3"
+    "@egjs/list-differ" "^1.0.0"
+
+"@egjs/imready@^1.1.3":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@egjs/imready/-/imready-1.3.0.tgz#76a7df9d1a77c008bcd33942d207d39d0ce2f6fa"
+  integrity sha512-h6qxQup/ZJxEJkDMuyR6yuJ9jsuVan7EyQ8Xa0WkTWAr3HtUYjtDHOCjJvhFg50Xv3C+TkfYj4Mxmkz7zNePSA==
+  dependencies:
+    "@egjs/component" "^3.0.1"
+
+"@egjs/list-differ@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@egjs/list-differ/-/list-differ-1.0.0.tgz#2277aff52e3e4bd9318d5c30ffc3ba3b6216f05e"
+  integrity sha512-HsbMKc0ZAQH+EUeCmI/2PvTYSybmkaWwakU8QGDYYgMVIg9BQ5sM0A0Nnombjxo2+JzXHxmH+jw//yGX+y6GYw==
+
+"@egjs/react-flicking@^4.9.1":
+  version "4.9.1"
+  resolved "https://registry.yarnpkg.com/@egjs/react-flicking/-/react-flicking-4.9.1.tgz#88313b074d662eee9e72db3b10c1b1fef665b4e6"
+  integrity sha512-lgEKBJSTv4W1LdCQzZTECiRibRcNWFfU7XQiiJYpm5AXU5b5Vq5TDyGQ5rrPz2+XPVXlbhkhMY+IpyJCUu9duA==
+  dependencies:
+    "@egjs/flicking" "~4.9.1"
+    "@egjs/list-differ" "^1.0.0"
+
 "@reduxjs/toolkit@^1.4.0":
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-1.6.1.tgz#7bc83b47352a663bf28db01e79d17ba54b98ade9"
@@ -1121,10 +1174,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^16.8.23":
-  version "16.14.11"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.11.tgz#992a0cd4b66b9f27315042b5d96e976717368f04"
-  integrity sha512-Don0MtsZZ3fjwTJ2BsoqkyOy7e176KplEAKOpr/4XDdzinlyJBn9yfsKn5mcSgn4kh1B22+3tBnzBC1z63ybtQ==
+"@types/react@^18.0.15":
+  version "18.0.15"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.15.tgz#d355644c26832dc27f3e6cbf0c4f4603fc4ab7fe"
+  integrity sha512-iz3BtLuIYH1uWdsv6wXYdhozhqj20oD4/Hk2DNXIn1kFsmp9x8d9QB6FnPhfkbhd2PgEONt9Q1x/ebkwjfFLow==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -6593,10 +6646,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.5.3:
-  version "3.9.10"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.10.tgz#70f3910ac7a51ed6bef79da7800690b19bf778b8"
-  integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
+typescript@^4.4.2:
+  version "4.7.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
+  integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
 
 uglify-js@3.4.x:
   version "3.4.10"
