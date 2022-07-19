@@ -17,7 +17,7 @@
     color: #000;
 
     .event_link:after {
-      background-image: url('/static/img/common/svg/btn_link_black.svg');
+      background-image: url('/static/img/common/svg/ico_right_black.svg');
     }
   }
 }
@@ -41,15 +41,19 @@
 
 .event_link {
   font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
 
   &:after {
     display: inline-block;
     width: 18px;
     height: 18px;
     margin-left: 10px;
-    background-image: url('/static/img/common/svg/btn_link.svg');
+    background-image: url('/static/img/common/svg/ico_right_white.svg');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
     vertical-align: top;
     content: '';
   }
@@ -58,6 +62,7 @@
 .banner_text_wrap {
   margin-top: 14px;
   font-size: 24px;
+  line-height: 34px;
   font-weight: 500;
   word-break: keep-all;
 }
@@ -117,6 +122,7 @@
   }
 }
 
-:global(.flicking-viewport), :global(.flicking-camera) {
+:global(.flicking-viewport),
+:global(.flicking-camera) {
   height: 100%;
 }

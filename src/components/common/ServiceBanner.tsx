@@ -54,7 +54,7 @@ const ServiceBanner: React.FC<IOwnProps> = ({ }) => {
           <strong className={cx('idc_service_sub_title')}>World Standard Data Center</strong>
           <a href='#' className={cx('idc_service_link')}>
             <span className={cx('pc_wrapper')}>자세히 알아보기</span>
-            <img className={cx('idc_service_link_img')} src='/static/img/common/svg/btn_link.svg' />
+            <img className={cx('idc_service_link_img')} src='/static/img/common/svg/ico_right_white.svg' />
           </a>
           <p className={cx('idc_service_text')}>대한민국 첫 데이터센터 가장 안전하며 대한민국을 넘어 세계 표준의 환경을 제공합니다</p>
         </div>
@@ -64,7 +64,7 @@ const ServiceBanner: React.FC<IOwnProps> = ({ }) => {
           <strong className={cx('idc_service_sub_title')}>World Standard Data Center</strong>
           <a href='#' className={cx('idc_service_link')}>
             <span className={cx('pc_wrapper')}>자세히 알아보기</span>
-            <img className={cx('idc_service_link_img')} src='/static/img/common/svg/btn_link.svg' />
+            <img className={cx('idc_service_link_img')} src='/static/img/common/svg/ico_right_white.svg' />
           </a>
           <p className={cx('idc_service_text')}>대한민국 첫 데이터센터 가장 안전하며 대한민국을 넘어 세계 표준의 환경을 제공합니다</p>
         </div>
@@ -74,7 +74,7 @@ const ServiceBanner: React.FC<IOwnProps> = ({ }) => {
           <strong className={cx('idc_service_sub_title')}>World Standard Data Center</strong>
           <a href='#' className={cx('idc_service_link')}>
             <span className={cx('pc_wrapper')}>자세히 알아보기</span>
-            <img className={cx('idc_service_link_img')} src='/static/img/common/svg/btn_link.svg' />
+            <img className={cx('idc_service_link_img')} src='/static/img/common/svg/ico_right_white.svg' />
           </a>
           <p className={cx('idc_service_text')}>대한민국 첫 데이터센터 가장 안전하며 대한민국을 넘어 세계 표준의 환경을 제공합니다</p>
         </div>

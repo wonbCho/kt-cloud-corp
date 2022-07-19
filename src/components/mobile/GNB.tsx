@@ -49,7 +49,7 @@ const GNB: React.FC<IOwnProps> = ({
             </li>
           </ul>
           <div className={cx('lan_wrap')}>
-            <img className={cx('lan_img')} src="/static/img/common/svg/black_lang.svg" />
+            <div className={cx('lan_img')} />
             <button>KOR</button>
             <button className={cx('lan')}>ENG</button>
           </div>

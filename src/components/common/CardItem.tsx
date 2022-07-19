@@ -21,7 +21,7 @@ const CardItem: React.FC<IOwnProps> = ({ }) => {
             </p>
             <a className={cx('career_esg_link')}>
               <span className={cx('pc_wrapper')}>인재채용</span>
-              <img className={cx('career_esg_link_img')} src='/static/img/common/svg/btn-external-link.svg' />
+              <img className={cx('career_esg_link_img')} src='/static/img/common/svg/ico_up_right_white.svg' />
             </a>
           </div>
         </div>
@@ -36,7 +36,7 @@ const CardItem: React.FC<IOwnProps> = ({ }) => {
             </p>
             <a className={cx('career_esg_link')}>
               <span className={cx('pc_wrapper')}>ESG 경영</span>
-              <img className={cx('career_esg_link_img')} src='/static/img/common/svg/ico-link.svg' />
+              <img className={cx('career_esg_link_img')} src='/static/img/common/svg/ico_right_white.svg' />
             </a>
           </div>
         </div>
