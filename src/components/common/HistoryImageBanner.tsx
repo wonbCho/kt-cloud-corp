@@ -14,26 +14,26 @@ interface IOwnProps {
 
 const HistoryImageBanner: React.FC<IOwnProps> = ({ imageUrl, year, title, text }) => {
   const { gsap, ScrollTrigger, getGSAPQuerySelector } = useGSAP();
-  const imageBannerRef_1 = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const initGSAP = () => {
       const tl = gsap.timeline({ paused: true });
-      const imageBanner_1 = imageBannerRef_1.current;
+      const containerEl = containerRef.current;
 
-      if (!imageBanner_1) {
+      if (!containerEl) {
         return;
       }
 
       tl
-        .from(imageBanner_1.querySelector(getGSAPQuerySelector('image-banner')), {
+        .from(containerEl.querySelector(getGSAPQuerySelector('image-banner')), {
           delay: 0.2,
           duration: 0.6,
           opacity: 0,
           y: 30,
           ease: 'power1.out',
         })
-        .from(imageBanner_1.querySelector(getGSAPQuerySelector('image-banner-text-1')),
+        .from(containerEl.querySelector(getGSAPQuerySelector('image-banner-text-1')),
           {
             duration: 0.6,
             opacity: 0,
@@ -42,7 +42,7 @@ const HistoryImageBanner: React.FC<IOwnProps> = ({ imageUrl, year, title, text }
           },
           '-=0.4'
         )
-        .from(imageBanner_1.querySelector(getGSAPQuerySelector('image-banner-text-2')),
+        .from(containerEl.querySelector(getGSAPQuerySelector('image-banner-text-2')),
           {
             duration: 0.6,
             opacity: 0,
@@ -51,7 +51,7 @@ const HistoryImageBanner: React.FC<IOwnProps> = ({ imageUrl, year, title, text }
           },
           '-=0.4'
         )
-        .from(imageBanner_1.querySelector(getGSAPQuerySelector('image-banner-text-3')),
+        .from(containerEl.querySelector(getGSAPQuerySelector('image-banner-text-3')),
           {
             duration: 0.6,
             opacity: 0,
@@ -62,7 +62,7 @@ const HistoryImageBanner: React.FC<IOwnProps> = ({ imageUrl, year, title, text }
         );
 
       ScrollTrigger.create({
-        trigger: imageBanner_1,
+        trigger: containerEl,
         once: true,
         start: 'top 70%',
         onEnter: () => {
@@ -75,7 +75,7 @@ const HistoryImageBanner: React.FC<IOwnProps> = ({ imageUrl, year, title, text }
   }, []);
 
   return (
-    <div className={cx('history_image_banner')} ref={imageBannerRef_1}>
+    <div className={cx('history_image_banner')} ref={containerRef}>
       <div className={cx('inner')}>
         <div className={cx('thumb')} data-gsap="image-banner">
           <img src={imageUrl} alt="" className={cx('image')} />

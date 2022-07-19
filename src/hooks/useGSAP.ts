@@ -16,6 +16,7 @@ const useGSAP = () => {
   return {
     gsap,
     ScrollTrigger,
+    SplitText,
     getGSAPQuerySelector
   };
 };

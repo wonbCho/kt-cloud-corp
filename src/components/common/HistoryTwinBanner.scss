@@ -1,0 +1,83 @@
+.history_twin_Banner {
+  .text_area {
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .year {
+    float: left;
+  }
+
+  .text_content {
+    overflow: hidden;
+    padding-left: 26px;
+  }
+
+  .thumb_area {
+    display: flex;
+    position: relative;
+    margin: 14px 0 20%;
+  
+    .thumb {
+      position: relative;
+      width: 50%;
+      padding-top: 50%;
+  
+      &+.thumb {
+        position: absolute;
+        top: 40%;
+        right: 0;
+      }
+    }
+  
+    .image {
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      bottom: -50%;
+      left: -50%;
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .history_twin_Banner {
+    position: relative;
+    .text_area {
+      overflow: hidden;
+    }
+  
+    .text_content {
+      padding-left: 0;
+    }
+
+    .year {
+      position: absolute;
+      top: 15px;
+      left: 32px;
+      float: none;
+      font-size: 80px;
+      line-height: 100px;
+      z-index: 1;
+    }
+
+    .title {
+      position: absolute;
+      left: 32px;
+      bottom: 29px;
+      z-index: 1;
+    }
+
+    .description {
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 50%;
+      margin: -51px 0 0 32px;
+      padding-top: 20%;
+    }
+  }
+}

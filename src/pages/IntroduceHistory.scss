@@ -11,13 +11,16 @@
       top: 0;
       left: 0;
       right: 0;
-      z-index: 1;
+      z-index: 10;
       background-color: #000;
+
+      .list_set {
+        padding: 0 24px;
+      }
     }
 
     .list_set {
       display: flex;
-      padding: 0 24px;
     }
 
     .list {
@@ -64,28 +67,6 @@
       &+.list {
         margin-top: 20px;
       }
-
-      .location {
-        display: block;
-        margin-top: 4px;
-      }
-
-      .thumb {
-        overflow: hidden;
-        position: relative;
-        margin-top: 14px;
-        padding-top: 100%;
-
-        .image {
-          position: absolute;
-          top: -50%;
-          right: -50%;
-          bottom: -50%;
-          left: -50%;
-          width: 100%;
-          margin: auto;
-        }
-      }
     }
   }
 
@@ -103,43 +84,9 @@
 
   .content_3 {
     padding: 24px 0;
-    font-size: 16px;
-    line-height: 22px;
 
     .list+.list {
       margin-top: 30%;
-    }
-
-    .location {
-      margin-top: 4px;
-    }
-
-    .thumb_area {
-      display: flex;
-      position: relative;
-      margin: 14px 0 20%;
-
-      .thumb {
-        position: relative;
-        width: 50%;
-        padding-top: 50%;
-
-        &+.thumb {
-          position: absolute;
-          top: 40%;
-          right: 0;
-        }
-      }
-
-      .image {
-        position: absolute;
-        top: -50%;
-        right: -50%;
-        bottom: -50%;
-        left: -50%;
-        width: 100%;
-        margin: auto;
-      }
     }
   }
 }
@@ -174,33 +121,8 @@
       padding: 80px 0 60px;
 
       .list {
-        display: flex;
-        flex-direction: row-reverse;
-
         &+.list {
           margin-top: 60px;
-        }
-
-        .text_area {
-          width: 50%;
-          padding-left: 64px;
-          box-sizing: border-box;
-
-          .year {
-            font-size: 80px;
-            line-height: 100px;
-          }
-
-          .location {
-            font-size: 24px;
-            line-height: 34px;
-          }
-        }
-
-        .thumb {
-          width: 50%;
-          padding-top: 50%;
-          margin-top: 0;
         }
       }
     }
@@ -214,27 +136,11 @@
           margin-top: 60px;
         }
       }
+    }
 
     .content_3 {
       position: relative;
       padding: 60px 0;
-
-      .year {
-        position: absolute;
-        top: 116px;
-        left: 32px;
-        font-size: 80px;
-        line-height: 100px;
-      }
-
-      .thumb_location {
-        position: absolute;
-        left: 32px;
-        bottom: 30px;
-        font-size: 24px;
-        line-height: 34px;
-      }
-    }
     }
   }
 }
