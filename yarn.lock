@@ -1061,6 +1061,11 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/gsap@npm:@gsap/business@^3.10.4", "gsap@npm:@gsap/business@^3.10.4":
+  version "3.10.4"
+  resolved "https://npm.greensock.com/@gsap%2fbusiness/-/business-3.10.4.tgz#109a6171394938b1e6a18494d097a5015f700aac"
+  integrity sha512-kJzSzrnGNrCAx0wCwNkHLc3rRckuebvfzWFLI5u+60mLDIm7jc986XUzS4+UnRuh1HCavALEuAsgWPqtVw8Low==
+
 "@types/history@*":
   version "4.7.9"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.9.tgz#1cfb6d60ef3822c589f18e70f8b12f9a28ce8724"

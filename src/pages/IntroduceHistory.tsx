@@ -4,6 +4,7 @@ import styles from './IntroduceHistory.scss';
 import IntroduceBanner from '@src/components/common/IntroduceBanner';
 import Footer from '@src/components/common/Footer';
 import ScrollUtil from '@src/utils/ScrollUtil';
+import useGSAP from '@src/hooks/useGSAP';
 
 interface IOwnProps {
 };
@@ -11,6 +12,7 @@ interface IOwnProps {
 const cx = classNames.bind(styles);
 
 const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
+  const { gsap } = useGSAP();
   const stickyRef = useRef<HTMLDivElement>(null);
   const historyRef_1 = useRef<HTMLLIElement>(null);
   const historyRef_2 = useRef<HTMLLIElement>(null);
