@@ -1061,11 +1061,6 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/gsap@npm:@gsap/business@^3.10.4", "gsap@npm:@gsap/business@^3.10.4":
-  version "3.10.4"
-  resolved "https://npm.greensock.com/@gsap%2fbusiness/-/business-3.10.4.tgz#109a6171394938b1e6a18494d097a5015f700aac"
-  integrity sha512-kJzSzrnGNrCAx0wCwNkHLc3rRckuebvfzWFLI5u+60mLDIm7jc986XUzS4+UnRuh1HCavALEuAsgWPqtVw8Low==
-
 "@types/history@*":
   version "4.7.9"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.9.tgz#1cfb6d60ef3822c589f18e70f8b12f9a28ce8724"
@@ -3592,6 +3587,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2:
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
+
+"gsap@npm:@gsap/business":
+  version "3.10.4"
+  resolved "https://npm.greensock.com/@gsap%2fbusiness/-/business-3.10.4.tgz#109a6171394938b1e6a18494d097a5015f700aac"
+  integrity sha512-kJzSzrnGNrCAx0wCwNkHLc3rRckuebvfzWFLI5u+60mLDIm7jc986XUzS4+UnRuh1HCavALEuAsgWPqtVw8Low==
 
 handle-thing@^2.0.0:
   version "2.0.1"
