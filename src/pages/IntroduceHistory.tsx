@@ -5,6 +5,7 @@ import IntroduceBanner from '@src/components/common/IntroduceBanner';
 import Footer from '@src/components/common/Footer';
 import ScrollUtil from '@src/utils/ScrollUtil';
 import useGSAP from '@src/hooks/useGSAP';
+import HistoryImageBanner from '@src/components/common/HistoryImageBanner';
 
 interface IOwnProps {
 };
@@ -12,7 +13,7 @@ interface IOwnProps {
 const cx = classNames.bind(styles);
 
 const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
-  const { gsap } = useGSAP();
+  const { gsap, ScrollTrigger, getGSAPQuerySelector } = useGSAP();
   const stickyRef = useRef<HTMLDivElement>(null);
   const historyRef_1 = useRef<HTMLLIElement>(null);
   const historyRef_2 = useRef<HTMLLIElement>(null);
@@ -110,24 +111,10 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
           </ul>
           <ul className={cx('content_2')}>
             <li className={cx('list')} ref={historyRef_2}>
-              <div className={cx('thumb')}>
-                <img src="/static/img/common/png/history_image_2.png" alt="" className={cx('image')} />
-              </div>
-              <div className={cx('main_text')}>
-                <strong className={cx('title')}>2010</strong>
-                <strong className={cx('text')}>국내 최초 클라우드 서비스 시작</strong>
-              </div>
-              <p className={cx('sub_text')}>국내 최초 퍼블릭 클라우드 1호 인증</p>
+              <HistoryImageBanner imageUrl="/static/img/common/png/history_image_2.png" year="2010" title="내 최초 클라우드 서비스 시작" text="국내 최초 퍼블릭 클라우드 1호 인증" />
             </li>
             <li className={cx('list')}>
-              <div className={cx('thumb')}>
-                <img src="/static/img/common/png/history_image_3.png" alt="" className={cx('image')} />
-              </div>
-              <div className={cx('main_text')}>
-                <strong className={cx('title')}>2011</strong>
-                <strong className={cx('text')}>국내 최초 클라우드 전용 데이터센터 개소</strong>
-              </div>
-              <p className={cx('sub_text')}>천안 IDC</p>
+              <HistoryImageBanner imageUrl="/static/img/common/png/history_image_3.png" year="2010" title="국내 최초 클라우드 전용 데이터센터 개소" text="천안 IDC" />
             </li>
           </ul>
           <ul className={cx('content_3')}>
@@ -200,16 +187,7 @@ const IntroduceHistory: React.FC<IOwnProps> = ({ }) => {
           </ul>
           <ul className={cx('content_2')}>
             <li className={cx('list')}>
-              <div className={cx('thumb')}>
-                <img src="/static/img/common/png/history_image_2.png" alt="" className={cx('image')} />
-              </div>
-              <div className={cx('main_text')}>
-                <strong className={cx('title')}>2021</strong>
-                <strong className={cx('text')}>더 나은 일상을 만들기 위한 지금</strong>
-              </div>
-              <p className={cx('sub_text')}>
-                세계최초 ‘하이퍼스케일 AI 컴퓨팅(HAC)’ 서비스 출시 공공 SaaS(KT Bizworks) 출시
-              </p>
+              <HistoryImageBanner imageUrl="/static/img/common/png/history_image_2.png" year="2021" title="더 나은 일상을 만들기 위한 지금" text="세계최초 ‘하이퍼스케일 AI 컴퓨팅(HAC)’ 서비스 출시 공공 SaaS(KT Bizworks) 출시" />
             </li>
           </ul>
         </div>

@@ -55,7 +55,7 @@
   }
 
   .content_1 {
-    padding: 20px 0;
+     padding: 20px 0;
 
     .list {
       font-size: 16px;
@@ -98,49 +98,6 @@
       &+.list {
         margin-top: 20px;
       }
-    }
-
-    .thumb {
-      overflow: hidden;
-      position: relative;
-      padding-top: 75%;
-
-      .image {
-        position: absolute;
-        top: -50%;
-        right: -50%;
-        bottom: -50%;
-        left: -50%;
-        width: 100%;
-        margin: auto;
-      }
-    }
-
-    .main_text {
-      position: absolute;
-      top: 50%;
-      left: 24px;
-      transform: translateY(-50%);
-
-      .title {
-        font-size: 40px;
-        line-height: 50px;
-      }
-
-      .text {
-        display: block;
-        margin-top: 4px;
-        font-size: 16px;
-        line-height: 22px;
-      }
-    }
-
-    .sub_text {
-      position: absolute;
-      left: 24px;
-      bottom: 15px;
-      font-size: 16px;
-      line-height: 22px;
     }
   }
 
@@ -258,44 +215,6 @@
         }
       }
 
-      .thumb {
-        padding-top: 54.01%;
-      }
-
-      .main_text {
-        position: initial;
-        top: auto;
-        left: auto;
-        transform: none;
-
-        .title {
-          position: absolute;
-          top: 43px;
-          left: 0;
-          right: 0;
-          font-size: 80px;
-          line-height: 100px;
-        }
-
-        .text {
-          position: absolute;
-          top: 50%;
-          left: 0;
-          right: 0;
-          margin-top: 0;
-          transform: translateY(-50%);
-          font-size: 40px;
-          line-height: 52px;
-        }
-      }
-
-      .sub_text {
-        left: 0;
-        right: 0;
-        bottom: 60px;
-      }
-    }
-
     .content_3 {
       position: relative;
       padding: 60px 0;
@@ -315,6 +234,7 @@
         font-size: 24px;
         line-height: 34px;
       }
+    }
     }
   }
 }
