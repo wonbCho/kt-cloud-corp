@@ -38,7 +38,7 @@ const Header: React.FC<IOwnProps> = ({ isLight }) => {
           <button className={cx('console_wrap')}>
             <span>
               CONSOLE
-              <img className={cx('console_img')} src="/static/img/common/svg/white_up_right_allow.svg"></img>
+              <img className={cx('console_img')} src="/static/img/common/svg/ico_up_right_white.svg"></img>
             </span>
           </button>
           {/* [TODO]: 2차 스펙 */}

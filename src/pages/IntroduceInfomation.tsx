@@ -81,7 +81,7 @@ const IntroduceInfomation: React.FC<IOwnProps> = ({ }) => {
             <div className={cx('down_link_wrap')}>
               <a className={cx('down_link')}>
                 PDF 다운로드
-                <img className={cx('down_link_img')} src='/static/img/common/svg/front-link.svg' />
+                <img className={cx('down_link_img')} src='/static/img/common/svg/ico_right_white.svg' />
               </a>
             </div>
           </div>
@@ -91,11 +91,11 @@ const IntroduceInfomation: React.FC<IOwnProps> = ({ }) => {
             <div className={cx('down_link_wrap')}>
               <a className={cx('down_link')}>
                 가이드 PDF 다운로드
-                <img className={cx('down_link_img')} src='/static/img/common/svg/front-link.svg' />
+                <img className={cx('down_link_img')} src='/static/img/common/svg/ico_right_white.svg' />
               </a>
               <a className={cx('down_link')}>
                 AI 다운로드
-                <img className={cx('down_link_img')} src='/static/img/common/svg/front-link.svg' />
+                <img className={cx('down_link_img')} src='/static/img/common/svg/ico_right_white.svg' />
               </a>
             </div>
           </div>

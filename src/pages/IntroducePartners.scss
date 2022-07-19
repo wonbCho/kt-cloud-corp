@@ -24,7 +24,7 @@
         right: 13px;
         width: 16px;
         height: 16px;
-        background-image: url('/static/img/common/svg/black_down_right_arrow.svg');
+        background-image: url('/static/img/common/svg/ico_down_right_black.svg');
         content: '';
         background-repeat: no-repeat;
       }
@@ -33,7 +33,7 @@
         background-color: #fff;
 
         &:after {
-          background-image: url('/static/img/common/svg/black_up_right_arrow.svg');
+          background-image: url('/static/img/common/svg/ico_up_right_black.svg');
         }
       }
     }

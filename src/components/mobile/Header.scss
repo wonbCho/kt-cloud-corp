@@ -12,7 +12,7 @@
 		background-color: #000;
 
 		.menu_wrap {
-			background-image: url("/static/img/common/svg/white_menu_bar.svg");
+			background: url("/static/img/common/svg/ico_menubar_white.svg") no-repeat center center;
 		}
 	}
 
@@ -32,6 +32,6 @@
 		width: 32px;
 		height: 32px;
 		border-radius: 6px;
-		background-image: url("/static/img/common/svg/black_menu_bar.svg");
+		background-image: url("/static/img/common/svg/ico_menubar_black.svg");
 	}
 }
