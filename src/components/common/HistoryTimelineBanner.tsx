@@ -55,7 +55,7 @@ const HistoryTimelineBanner: React.FC<IOwnProps> = ({ year, text, imageUrl, sub_
       ScrollTrigger.create({
         trigger: containerEl,
         once: true,
-        start: 'top 70%',
+        start: 'top 100%',
         onEnter: () => {
           tl.play();
         },
